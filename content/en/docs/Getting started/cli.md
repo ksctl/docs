@@ -91,7 +91,11 @@ make uninstall
 
 
 {{< alert color="success" title="Demo for the ksctl installation" >}}
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/iYwE3h0p7Zs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/iYwE3h0p7Zs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+  <video width="360" height="202" controls>
+  <source src="/ksctl-docs/videos/ksctl-install.mp4" type="video/mp4" />
+    Your browser does not support the video tag.
+  </video>
 {{< /alert >}}
 
 
