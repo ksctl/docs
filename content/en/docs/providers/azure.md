@@ -1,5 +1,14 @@
-# Azure
+---
+title: Azure
+weight: 4
+description: >
+  Concepts around ksctl core
+---
 
+# Azure
+{{% pageinfo %}}
+Related to the overall managers and controllers
+{{% /pageinfo %}}
 Azure support for the HA and Managed Cluster
 
 
@@ -20,7 +29,7 @@ these are confidential information so shouldn't be shared with anyone
 subscription id using your subscription
 :::
 
-![azure-subscription](/img/azure/azure-subs-id.png)
+![azure-subscription](/ksctl-docs/img/azure/azure-subs-id.png)
 
 
 
@@ -32,13 +41,13 @@ subscription id using your subscription
 Azure Dashboard contains all the credentials required
 :::
 
-![azure-dashboard](/img/azure/azure-dashboard.png)
+![azure-dashboard](/ksctl-docs/img/azure/azure-dashboard.png)
 
 :::note
 lets get the tenant id from the Azure
 :::
 
-![](/img/azure/azure-tenantid.png)
+![](/ksctl-docs/img/azure/azure-tenantid.png)
 
 
 
@@ -48,11 +57,11 @@ lets get the tenant id from the Azure
 it represents the id of app created
 :::
 
-![](/img/azure/azure-app-reg.png)
+![](/ksctl-docs/img/azure/azure-app-reg.png)
 
-![](/img/azure/azure-create-app-reg.png)
+![](/ksctl-docs/img/azure/azure-create-app-reg.png)
 
-![](/img/azure/azure-clientid.png)
+![](/ksctl-docs/img/azure/azure-clientid.png)
 
 
 
