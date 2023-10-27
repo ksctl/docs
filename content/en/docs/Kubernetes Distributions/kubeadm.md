@@ -1,6 +1,7 @@
 ---
 title: Kubeadm
 description: Kubeadm Kubernetes Distributions
+categories: [Kubernetes Provider]
 tags: [Kubeadm, ha, core]
 ---
 

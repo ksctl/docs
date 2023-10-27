@@ -2,6 +2,7 @@
 title: Kubernetes Distributions
 description: Various Kubernetes Distributions
 tags: [ha, core]
+categories: [Kubernetes Provider]
 ---
 
 {{% pageinfo %}}
