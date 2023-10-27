@@ -1,4 +1,4 @@
-baseURL = "ksctl-docs"
+baseURL = "https://kubesimplify.github.io/ksctl-docs/"
 title = "Ksctl Docs"
 favicon = "/img/favicon.ico"
 
