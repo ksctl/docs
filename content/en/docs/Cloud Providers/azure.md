@@ -1,51 +1,40 @@
 ---
 title: Azure
-weight: 4
 description: >
-  Concepts around ksctl core
+  Azure Cloud Provider
+categories: [Cloud Provider]
+tags: [azure, ha, managed, core]
 ---
 
-# Azure
 {{% pageinfo %}}
-Related to the overall managers and controllers
+Azure support for HA and Managed Clusters
 {{% /pageinfo %}}
-Azure support for the HA and Managed Cluster
 
 
-## Usage Prequisites
-
-:::note
+{{% alert color="warning" title="Caution" %}}
 we need credentials to access clusters
-:::
 
-:::caution
 these are confidential information so shouldn't be shared with anyone
-:::
+{{% /alert %}}
 
 
 ### Azure Subscription ID
 
-:::note
 subscription id using your subscription
-:::
 
 ![azure-subscription](/ksctl-docs/img/azure/azure-subs-id.png)
-
 
 
 ### Azure Tenant ID
 
 #### Azure Dashboard
 
-:::note
 Azure Dashboard contains all the credentials required
-:::
+
 
 ![azure-dashboard](/ksctl-docs/img/azure/azure-dashboard.png)
 
-:::note
 lets get the tenant id from the Azure
-:::
 
 ![](/ksctl-docs/img/azure/azure-tenantid.png)
 
@@ -53,9 +42,8 @@ lets get the tenant id from the Azure
 
 ### Azure Client ID
 
-:::note
 it represents the id of app created
-:::
+
 
 ![](/ksctl-docs/img/azure/azure-app-reg.png)
 
@@ -67,24 +55,18 @@ it represents the id of app created
 
 ### Azure Client Secret
 
-:::note
 it represents the secret associated with the app in order to use it
-:::
 
-![create app secret](/img/azure/azure-client-secret1.png)
-
-
-![after-click](/img/azure/azure-client-secret.png)
+![create app secret](/ksctl-docs/img/azure/azure-client-secret1.png)
 
 
-![copy-secret](/img/azure/azure-client-secret2.png)
+![after-click](/ksctl-docs/img/azure/azure-client-secret.png)
+
+
+![copy-secret](/ksctl-docs/img/azure/azure-client-secret2.png)
 
 ## How to add credentials to ksctl
 
-:::note Advice
-When showing / giving demos use the command line
-when using it in temporary device
-:::
 
 1. Environment Variables
 
@@ -122,33 +104,30 @@ clusters which are managed by the cloud provider
 
 #### Create, Update, Delete, Switch
 
-:::info Update the cluster infrastructure
+{{% alert title="Update the cluster infrastructure" %}}
+
 **Managed cluster**: till now it's not supported
 
 **HA cluster**
 - addition and deletion of new workerplane node
 - SSH access to each cluster node (DB, LB, Controplane, WorkerPlane) _Public Access_, secured by private key
-:::
 
-:::success DEMO
+{{% /alert %}}
 
-### &nbsp Managed Cluster {#azureManaged}
-
-<video width="360" height="202" controls>
-<source src="../../videos/ksctl-azure-managed.mp4" type="video/mp4" />
-Your browser does not support the video tag.
-</video>
-
-:::
-
-:::success DEMO
-
-### &nbsp Highly Available Cluster {#azureHA}
+{{% alert color="success" title="Managed Cluster" %}}
 
 <video width="360" height="202" controls>
-<source src="../../videos/ksctl-azure-ha.mp4" type="video/mp4" />
+<source src="/ksctl-docs/videos/ksctl-azure-managed.mp4" type="video/mp4" />
 Your browser does not support the video tag.
 </video>
+{{% /alert %}}
 
-:::
+
+{{% alert color="success" title="Highly Available Cluster" %}}
+
+<video width="360" height="202" controls>
+<source src="/ksctl-docs/videos/ksctl-azure-ha.mp4" type="video/mp4" />
+Your browser does not support the video tag.
+</video>
+{{% /alert %}}
 

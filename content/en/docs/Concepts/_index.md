@@ -1,6 +1,5 @@
 ---
 title: Concepts
-weight: 4
 description: >
   Concepts around ksctl core
 ---

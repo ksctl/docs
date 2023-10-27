@@ -5,12 +5,8 @@ description: How to contribute to the docs
 ---
 
 {{% pageinfo %}}
-These basic sample guidelines assume that your Docsy site is deployed using Netlify and your files are stored in GitHub. You can use the guidelines "as is" or adapt them with your own instructions: for example, other deployment options, information about your doc project's file structure, project-specific review guidelines, versioning guidelines, or any other information your users might find useful when updating your site. [Kubeflow](https://github.com/kubeflow/website/blob/master/README.md) has a great example.
-
-Don't forget to link to your own doc repo rather than our example site! Also make sure users can find these guidelines from your doc repo README: either add them there and link to them from this page, add them here and link to them from the README, or include them in both locations.
+You can do almost all the tests in your local except e2e tests which requires you to provide cloud credentials
 {{% /pageinfo %}}
-
-# Contributions
 
 Provide a generic tasks for new and existing contributors
 
@@ -71,33 +67,6 @@ git remote add upstream https://github.com/kubesimplify/ksctl.git # set upstream
 git remote set-url --push upstream no_push # no push to upstream
 ```
 
-# Building from source
-### Linux
-```bash
-make install_linux # for linux
-```
-### Mac OS
-```bash
-make install_macos # for macos
-```
-### Windows
-```bash
-.\builder.ps1 # for windows
-```
-## Website
-```bash
-cd website # to go inside the directory
-```
-### Install Dependencies
-```bash
-npm install
-```
-
-
-### Start the Server
-```bash
-npm start
-```
 ## Trying out code changes
 
 Info | data
@@ -108,11 +77,6 @@ pass | `77777`
 
 
 Before submitting a code change, it is important to test your changes thoroughly. You can do this by running the unit tests and integration tests.
-
-### Unit tests
-```bash
-make test
-```
 
 ## Submitting changes
 
