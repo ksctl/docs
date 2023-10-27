@@ -33,8 +33,6 @@ iwr -useb https://raw.githubusercontent.com/kubesimplify/ksctl-cli/main/install.
   {{% /tab %}}
 {{< /tabpane >}}
 
-----
-
 
 {{% alert title="Uninstall" %}}Steps to Uninstall Ksctl cli tool{{% /alert %}}
 
@@ -56,10 +54,6 @@ iwr -useb https://raw.githubusercontent.com/kubesimplify/ksctl-cli/main/scripts/
 ```
   {{% /tab %}}
 {{< /tabpane >}}
-
-
-
-
 
 
 ## From Source Code
@@ -101,9 +95,6 @@ make uninstall
 {{< /alert >}}
 
 
-
-#### [Azure High-Availability Cluster](../providers/azure.md#azureHA)
-#### [Azure Managed Cluster](../providers/azure.md#azureManaged)
-#### [Civo High-Availability Cluster](../providers/civo.md#civoHA)
-#### [Civo Managed Cluster](../providers/civo.md#civoManaged)
+#### [Azure Cluster](/ksctl-docs/docs/cloud-providers/azure/)
+#### [Civo Cluster](/ksctl-docs/docs/cloud-providers/civo/)
 

@@ -1,21 +1,15 @@
-# Roadmap
+---
+title: Roadmap
+description: What does your user need to know to try your project?
+tags: [roadmap, core]
+---
 
 ## Current Status on Supported Providers
 
-export const Highlight = ({children, color}) => (
-  <span
-    style={{
-      backgroundColor: color,
-      borderRadius: '2px',
-      color: '#fff',
-      padding: '0.2rem',
-    }}>
-    {children}
-  </span>
-);
-
-<Highlight color="green">Done</Highlight> <Highlight color="red">Not Started</Highlight> <Highlight color="black">No Plans</Highlight> <Highlight color="blue">Backlog</Highlight>
-
+<div class="-text-green">Done</div>
+<div class="-text-red">Not Started</div>
+<div class="-text-black">No Plans</div>
+<div class="-text-blue">Backlog</div>
 
 ```mermaid
 flowchart LR;
@@ -60,9 +54,6 @@ flowchart LR;
 
 ## Future Plans
 
-:::note
-The below list is for most probable goals
-:::
 
 0. Add HA external Datastore (use of etcd instead of mysql)
 1. add distributions of binaries via the package managers
@@ -74,12 +65,11 @@ The below list is for most probable goals
 7. Create server running ksctl which can reconsile state automatically
 
 
-### CheckList (not exaustive)
-- [ ] add Web client
-- [ ] GCP
-- [ ] AWS
-- [x] additional kubernetes application support
-- [ ] all other cloud providers
-- [x] improve the High avilability cluster architecture
-- [x] improve logging in local
+### CheckList
+- Dashboard for ksctl
+- GCP
+- AWS
+- ~~additional kubernetes application support~~
+- ~~improve the High avilability cluster architecture~~
+- ~~improve logging in local~~
 

@@ -1,12 +1,14 @@
 ---
-sidebar_position: 1
+title: Intro
+description: What does your user need to know to try your project?
+tags: [docs]
 ---
 
 # Ksctl Intro
 
 ## Purpose
 :::info what is it?
-The ksctl project by kubesimplify is a Generic Kubernetes Management command-line tool that helps developers and administrators to manage multiple Kubernetes clusters running on multiple cloud environments
+The ksctl project by kubesimplify is a Cloud Agnostic Kubernetes Management command-line tool that helps developers and administrators to manage multiple Kubernetes clusters running on multiple cloud environments
 
 It provides a simple and intuitive interface for performing common tasks such as creating, deleting, and managing Kubernetes resources. ksctl is designed to be easy to use, even for developers who are new to Kubernetes.
 :::

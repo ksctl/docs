@@ -20,11 +20,11 @@ these are confidential information so shouldn't be shared with anyone
 ## Getting credentials
 
 ### under settings look for the profile
-![](/img/civo/civo-settings.png)
-![](/img/civo/profile.png)
+![](/ksctl-docs/img/civo/civo-settings.png)
+![](/ksctl-docs/img/civo/profile.png)
 
 ### copy the credentials
-![](/img/civo/security-api.png)
+![](/ksctl-docs/img/civo/security-api.png)
 
 ## How to add credentials to ksctl
 
@@ -46,7 +46,7 @@ ksctl cred
 #### Highly Available cluster
 clusters which are managed by the user not by cloud provider
 
-    using K3s kubernetes distribution which is lightweight
+> using K3s kubernetes distribution which is lightweight
 
 custom components being used
 - MySQL database instance
@@ -61,33 +61,30 @@ clusters which are managed by the cloud provider
 
 #### Create, Update, Delete, Switch
 
-:::info Update the cluster infrastructure
+{{% alert title="Update the cluster infrastructure" %}}
+
 **Managed cluster**: till now it's not supported
 
 **HA cluster**
 - addition and deletion of new workerplane node
 - SSH access to each cluster node (DB, LB, Controplane) _Public Access_, secured by private key
 - SSH access to each workplane _Private Access_ via local network, secured by private key
-:::
+{{% /alert %}}
 
-:::success DEMO
-
-### &nbsp Managed Cluster  {#civoManaged}
+{{% alert color="success" title="Managed Cluster" %}}
 
 <video width="360" height="202" controls>
 <source src="/ksctl-docs/videos/ksctl-civo-managed.mp4" type="video/mp4" />
 Your browser does not support the video tag.
 </video>
+{{% /alert %}}
 
-:::
 
-:::success DEMO
-
-### &nbsp Highly Available Cluster  {#civoHA}
+{{% alert color="success" title="Highly Available Cluster" %}}
 
 <video width="360" height="202" controls>
 <source src="/ksctl-docs/videos/ksctl-civo-ha.mp4" type="video/mp4" />
 Your browser does not support the video tag.
 </video>
+{{% /alert %}}
 
-:::
