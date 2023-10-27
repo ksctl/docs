@@ -1,6 +1,5 @@
 baseURL = "https://kubesimplify.github.io/ksctl-docs/"
 title = "Ksctl Docs"
-favicon = "/img/favicon.ico"
 
 # Language settings
 contentDir = "content/en"
@@ -105,7 +104,7 @@ archived_version = false
 # The version number for the version of the docs represented in this doc set.
 # Used in the "version-banner" partial to display a version number for the
 # current doc set.
-version = "0.0"
+version = "1.1.1"
 
 # A link to latest version of the docs. Used in the "version-banner" partial to
 # point people to the main doc site.
@@ -124,7 +123,7 @@ github_repo = "https://github.com/kubesimplify/ksctl-docs"
 github_branch= "main"
 
 # Enable Algolia DocSearch
-algolia_docsearch = false
+algolia_docsearch = true
 
 # Enable Lunr.js offline search
 offlineSearch = false
@@ -167,9 +166,10 @@ enable = false
 # End user relevant links. These will show up on left side of footer and in the community page if you have one.
 [[params.links.user]]
   name = "Ksctl Google Group"
-  url = "https://example.org/mail"
-  icon = "fa fa-envelope"
-  desc = "Discussion and help from your fellow users"
+  url = "https://groups.google.com/g/ksctl-kubesimplify"
+  icon = "fa fa-users-viewfinder"
+  desc = "Google Group for Contributors to join"
+
 [[params.links.user]]
   name ="Twitter"
   url = "https://twitter.com/kubesimplify"
@@ -183,7 +183,7 @@ enable = false
   desc = "Development takes place here!"
 [[params.links.developer]]
   name = "Developer mailing list"
-  url = "https://example.org/mail"
+  url = "ksctl-kubesimplify@googlegroups.com"
   icon = "fa fa-envelope"
   desc = "Discuss development issues around the project"
 

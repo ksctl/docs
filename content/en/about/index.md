@@ -7,7 +7,6 @@ menu: {main: {weight: 10}}
 {{% blocks/cover title="About Ksctl" image_anchor="bottom" height="auto" %}}
 
 
-
 {{% /blocks/cover %}}
 
 {{% blocks/lead %}}
@@ -16,6 +15,23 @@ The ksctl project by kubesimplify is a Cloud Agnostic Kubernetes Management comm
 
 {{% /blocks/lead %}}
 
+{{% blocks/section %}}
+
+**Benefits**
+{.h1 .text-center}
+
+
+**Simple and intuitive interface**: ksctl provides a simple and intuitive interface for managing Kubernetes clusters. This makes it easy for developers to get started with Kubernetes, even if they are new to the platform.
+
+**Efficient**: ksctl is designed to be efficient. It uses the SDKs to perform operations, which means that it can perform tasks quickly and without the need for additional tools.
+
+**Powerful**: ksctl is a powerful tool that can be used to perform a wide range of tasks. It can be used to create, delete, and manage Kubernetes resources
+
+**Lightweight**: ksctl binary is **< 100Mb** in size
+
+**Choice**: clusters with varying type of kubernetes distributions, installed apps, etc.
+
+{{% /blocks/section %}}
 
 
 {{% blocks/section %}}

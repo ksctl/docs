@@ -22,6 +22,23 @@ It provides a simple and intuitive interface for performing common tasks such as
 
 <!-- for the icons refer https://fontawesome.com/ -->
 
+{{% blocks/section %}}
+Problems in the Ecosystem
+{.h1 .text-center}
+
+**Limited Customizability**
+{.text-center}
+
+
+**Multiple CLI Tools thus causing fagramentation**
+{.text-center}
+
+**Users becomming dependent on a lot of tools instead of using a single tool**
+{.text-center}
+{{% /blocks/section %}}
+
+
+
 {{% blocks/section color="dark" type="row" %}}
 {{% blocks/feature icon="fa-gauge-high" title="Fast" %}}
 Creates Cloud-Managed or Self-
@@ -46,34 +63,20 @@ From CNI Plugins to Pre-installed apps
 {{% /blocks/feature %}}
 
 
-
-
 {{% /blocks/section %}}
 
-
-<!-- {{% blocks/section %}}
-This is the second section
-{.h1 .text-center}
-{{% /blocks/section %}} -->
 
 
 {{% blocks/section type="row" %}}
 
-<!-- {{% blocks/feature icon="fab fa-app-store-ios" title="Download **from AppStore**" %}}
-Get the Goldydocs app!
-{{% /blocks/feature %}}
-
 {{% blocks/feature icon="fab fa-github" title="Contributions welcome!"
-    url="https://github.com/google/docsy-example" %}}
-We do a [Pull Request](https://github.com/google/docsy-example/pulls)
-contributions workflow on **GitHub**. New users are always welcome!
+    url="https://github.com/kubesimplify/ksctl" %}}
+We do a contributions workflow on **GitHub**. New users are always welcome!
 {{% /blocks/feature %}}
 
 {{% blocks/feature icon="fab fa-twitter" title="Follow us on Twitter!"
-    url="https://twitter.com/GoHugoIO" %}}
+    url="https://twitter.com/kubesimplify" %}}
 For announcement of latest features etc.
-{{% /blocks/feature %}} -->
+{{% /blocks/feature %}}
 
 {{% /blocks/section %}}
-
-

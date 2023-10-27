@@ -2,6 +2,7 @@
 title: K3s
 description: K3s Kubernetes Distributions
 tags: [k3s, ha, core]
+categories: [Kubernetes Provider]
 ---
 
 K3s for HA Cluster on supported provider
