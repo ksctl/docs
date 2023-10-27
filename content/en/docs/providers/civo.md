@@ -1,23 +1,30 @@
-# Civo
+---
+title: Civo
+description: >
+  Civo Cloud Provider
+categories: [Cloud Provider]
+tags: [civo, ha, managed, core]
+---
 
+{{% pageinfo %}}
 Civo support for HA and Managed Clusters
+{{% /pageinfo %}}
 
-:::note
+{{% alert color="warning" title="Caution" %}}
 we need credentials to access clusters
-:::
 
-:::caution
 these are confidential information so shouldn't be shared with anyone
-:::
+{{% /alert %}}
+
 
 ## Getting credentials
 
 ### under settings look for the profile
-![](/img/civo/civo-settings.png)
-![](/img/civo/profile.png)
+![](img/civo/civo-settings.png)
+![](img/civo/profile.png)
 
 ### copy the credentials
-![](/img/civo/security-api.png)
+![](img/civo/security-api.png)
 
 ## How to add credentials to ksctl
 
