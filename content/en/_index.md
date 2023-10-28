@@ -30,7 +30,7 @@ Problems in the Ecosystem
 {.text-center}
 
 
-**Multiple CLI Tools thus causing fagramentation**
+**Multiple CLI Tools thus causing fragmentation**
 {.text-center}
 
 **Users becomming dependent on a lot of tools instead of using a single tool**
