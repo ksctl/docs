@@ -65,7 +65,17 @@ it represents the secret associated with the app in order to use it
 
 ![copy-secret](/ksctl-docs/img/azure/azure-client-secret2.png)
 
-## How to add credentials to ksctl
+### Assign Role to your app
+
+head over to subscriptions page and click **Access Control (IAM)**
+select the **Role Assignment** and then click **Add > Add Role Assignment**
+create a new role and when selecting the identity specify the name of the app
+Here you can customize the role this app has
+
+![role-assign-app](/ksctl-docs/img/azure/azure-role-app.png)
+
+
+## How these credentials are used by ksctl
 
 
 1. Environment Variables
