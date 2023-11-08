@@ -52,11 +52,3 @@ Repo: Kubesimplify/ksctl-cli | Hosts the CLI part of ksctl for users
 {{% /blocks/section %}}
 
 
-{{% blocks/section %}}
-
-# Ksctl Dashboard
-{.text-center}
-Repo: Kubesimplify/ksctl-dashboard | Hosts the Dashboard part of ksctl for users
-{.text-center}
-{{% /blocks/section %}}
-
