@@ -24,14 +24,15 @@ ksctl create <cloud-provider> ...  --feature-flag application --apps argocd,isti
 Updated: 2023-12-30
 ---
 
-argo-rollouts
-argocd
-istio
-prometheus-stack
-for the cni
+- argo-rollouts
+- argocd
+- istio
+- prometheus-stack
 
-cilium
-azure -> for aks
-flannel (default) -> for ha default in k3s so no need
-kubenet
-kind
+## for the cni
+
+- cilium
+- azure -> for aks
+- flannel (default) -> for ha default in k3s so no need
+- kubenet
+- kind
