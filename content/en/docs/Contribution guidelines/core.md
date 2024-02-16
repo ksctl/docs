@@ -27,15 +27,6 @@ make mock_test
 set the required token as ENV vars
 then
 ```bash
-mkdir -p ${HOME}/.ksctl/cred
-mkdir -p ${HOME}/.ksctl/config/civo/ha
-mkdir -p ${HOME}/.ksctl/config/azure/ha
-mkdir -p ${HOME}/.ksctl/config/aws/ha
-mkdir -p ${HOME}/.ksctl/config/azure/managed
-mkdir -p ${HOME}/.ksctl/config/civo/managed
-mkdir -p ${HOME}/.ksctl/config/aws/managed
-mkdir -p ${HOME}/.ksctl/config/local/managed
-
 cd test/e2e
 
 # then the syntax for running
