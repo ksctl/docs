@@ -18,17 +18,17 @@ their are various method
   {{% tab header="**Operating System**:" disabled=true /%}}
   {{% tab header="Linux" %}}
 ```bash
-bash <(curl -s https://raw.githubusercontent.com/kubesimplify/ksctl-cli/main/scripts/install.sh)
+bash <(curl -s https://raw.githubusercontent.com//ksctl/cli/main/scripts/install.sh)
 ```
   {{% /tab %}}
   {{% tab header="MacOS" %}}
 ```bash
-zsh <(curl -s https://raw.githubusercontent.com/kubesimplify/ksctl-cli/main/scripts/install.sh)
+zsh <(curl -s https://raw.githubusercontent.com//ksctl/cli/main/scripts/install.sh)
 ```
   {{% /tab %}}
   {{% tab header="Windows" lang="sw" %}}
 ```ps1
-iwr -useb https://raw.githubusercontent.com/kubesimplify/ksctl-cli/main/install.ps1 | iex
+iwr -useb https://raw.githubusercontent.com/ksctl/cli/main/install.ps1 | iex
 ```
   {{% /tab %}}
 {{< /tabpane >}}
@@ -40,17 +40,17 @@ iwr -useb https://raw.githubusercontent.com/kubesimplify/ksctl-cli/main/install.
   {{% tab header="**Operating System**:" disabled=true /%}}
   {{% tab header="Linux" %}}
 ```bash
-bash <(curl -s https://raw.githubusercontent.com/kubesimplify/ksctl-cli/main/scripts/uninstall.sh)
+bash <(curl -s https://raw.githubusercontent.com/ksctl/cli/main/scripts/uninstall.sh)
 ```
   {{% /tab %}}
   {{% tab header="MacOS" %}}
 ```bash
-zsh <(curl -s https://raw.githubusercontent.com/kubesimplify/ksctl-cli/main/scripts/uninstall.sh)
+zsh <(curl -s https://raw.githubusercontent.com/ksctl/cli/main/scripts/uninstall.sh)
 ```
   {{% /tab %}}
   {{% tab header="Windows" lang="sw" %}}
 ```ps1
-iwr -useb https://raw.githubusercontent.com/kubesimplify/ksctl-cli/main/scripts/uninstall.ps1 | iex
+iwr -useb https://raw.githubusercontent.com/ksctl/cli/main/scripts/uninstall.ps1 | iex
 ```
   {{% /tab %}}
 {{< /tabpane >}}
@@ -93,12 +93,12 @@ make uninstall
 {{< alert color="success" title="Demo for the ksctl installation" >}}
   <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/iYwE3h0p7Zs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
   <video width="360" height="202" controls>
-  <source src="/ksctl-docs/videos/ksctl-install.mp4" type="video/mp4" />
+  <source src="/docs/videos/ksctl-install.mp4" type="video/mp4" />
     Your browser does not support the video tag.
   </video>
 {{< /alert >}}
 
 
-#### [Azure Cluster](/ksctl-docs/docs/cloud-providers/azure/)
-#### [Civo Cluster](/ksctl-docs/docs/cloud-providers/civo/)
+#### [Azure Cluster](/docs/docs/cloud-providers/azure/)
+#### [Civo Cluster](/docs/docs/cloud-providers/civo/)
 
