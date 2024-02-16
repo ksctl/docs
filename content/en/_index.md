@@ -15,7 +15,7 @@ title: Ksctl Docs
 
 
 {{% blocks/lead color="primary" %}}
-The ksctl project by kubesimplify is a Cloud Agnostic Kubernetes Management command-line tool that helps developers and administrators to manage multiple Kubernetes clusters running on multiple cloud environments
+The ksctl project by ksctl is a Cloud Agnostic Kubernetes Management command-line tool that helps developers and administrators to manage multiple Kubernetes clusters running on multiple cloud environments
 
 It provides a simple and intuitive interface for performing common tasks such as creating, deleting, and managing Kubernetes resources. ksctl is designed to be easy to use, even for developers who are new to Kubernetes.
 {{% /blocks/lead %}}
@@ -70,7 +70,7 @@ From CNI Plugins to Pre-installed apps
 {{% blocks/section type="row" %}}
 
 {{% blocks/feature icon="fab fa-github" title="Contributions welcome!"
-    url="https://github.com/kubesimplify/ksctl" %}}
+    url="https://github.com/ksctl/ksctl" %}}
 We do a contributions workflow on **GitHub**. New users are always welcome!
 {{% /blocks/feature %}}
 
