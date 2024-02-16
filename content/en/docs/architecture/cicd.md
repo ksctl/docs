@@ -11,4 +11,4 @@ weight: 2
 
 ## Design
 ### E2E Test pipeline
-![light mode](/ksctl-docs/img/e2e-test-workflow.svg)
+![light mode](/docs/img/e2e-test-workflow.svg)
