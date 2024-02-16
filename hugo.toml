@@ -111,7 +111,7 @@ version = "1.1.1"
 #url_latest_version = "https://example.com"
 
 # Repository configuration (URLs for in-page links to opening issues and suggesting changes)
-github_repo = "https://github.com/kubesimplify/ksctl-docs"
+github_repo = "https://github.com/ksctl/docs"
 # An optional link to a related project repo. For example, the sibling repository where your product code lives.
 #github_project_repo = "https://github.com/google/docsy"
 
@@ -153,8 +153,8 @@ sidebar_search_disable = false
 [params.ui.feedback]
 enable = true
 # The responses that the user sees after clicking "yes" (the page was helpful) or "no" (the page was not helpful).
-yes = 'Glad to hear it! Please <a href="https://github.com/kubesimplify/ksctl-docs/issues/new">tell us how we can improve</a>.'
-no = 'Sorry to hear that. Please <a href="https://github.com/kubesimplify/ksctl-docs/issues/new">tell us how we can improve</a>.'
+yes = 'Glad to hear it! Please <a href="https://github.com/ksctl/docs/issues/new">tell us how we can improve</a>.'
+no = 'Sorry to hear that. Please <a href="https://github.com/ksctl/docs/issues/new">tell us how we can improve</a>.'
 
 # Adds a reading time to the top of each doc.
 # If you want this feature, but occasionally need to remove the Reading time from a single page,
@@ -178,7 +178,7 @@ enable = false
 
 [[params.links.developer]]
   name = "GitHub"
-  url = "https://github.com/kubesimplify/ksctl-docs"
+  url = "https://github.com/ksctl/docs"
   icon = "fab fa-github"
   desc = "Development takes place here!"
 [[params.links.developer]]
