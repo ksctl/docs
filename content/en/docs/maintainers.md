@@ -6,7 +6,7 @@ tags: [docs]
 
 ## Maintainers
 
-| Name | Role | Github | Twitter | Discord |
+| Name | Role | Twitter | Github | Discord |
 |------|------|--------|---------|---------|
 | Dipanakar | Creator & Maintainer | [Twitter](https://twitter.com/DipankarDas011) | [Github](https://github.com/dipankardas011) | dipankardas |
-| Praful | Maintainer | [Twitter](#) | [Github](#) | TODO |
+| Praful | Maintainer | [Twitter](https://twitter.com/OdinHoli) | [Github](https://github.com/Horiodino) | praful_ |
