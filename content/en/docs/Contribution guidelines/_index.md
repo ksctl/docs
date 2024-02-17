@@ -71,7 +71,7 @@ git remote set-url --push upstream no_push # no push to upstream
 
 Info | data
 -|-
-Url | `https://jenkins.ksctl.kubesimplify.com/`
+Url | `https://jenkins.ksctl.com/`
 UserName | `ksctl`
 pass | `77777`
 
