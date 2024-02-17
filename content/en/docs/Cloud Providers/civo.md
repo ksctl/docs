@@ -20,11 +20,11 @@ these are confidential information so shouldn't be shared with anyone
 ## Getting credentials
 
 ### under settings look for the profile
-![](/docs/img/civo/civo-settings.png)
-![](/docs/img/civo/profile.png)
+![](/img/civo/civo-settings.png)
+![](/img/civo/profile.png)
 
 ### copy the credentials
-![](/docs/img/civo/security-api.png)
+![](/img/civo/security-api.png)
 
 ## How to add credentials to ksctl
 
@@ -74,7 +74,7 @@ clusters which are managed by the cloud provider
 {{% alert color="success" title="Managed Cluster" %}}
 
 <video width="360" height="202" controls>
-<source src="/docs/videos/ksctl-civo-managed.mp4" type="video/mp4" />
+<source src="/videos/ksctl-civo-managed.mp4" type="video/mp4" />
 Your browser does not support the video tag.
 </video>
 {{% /alert %}}
@@ -83,7 +83,7 @@ Your browser does not support the video tag.
 {{% alert color="success" title="Highly Available Cluster" %}}
 
 <video width="360" height="202" controls>
-<source src="/docs/videos/ksctl-civo-ha.mp4" type="video/mp4" />
+<source src="/videos/ksctl-civo-ha.mp4" type="video/mp4" />
 Your browser does not support the video tag.
 </video>
 {{% /alert %}}
