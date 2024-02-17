@@ -56,14 +56,14 @@ what? why? How?
 **each commits must be sign-off**
 
 # Development
-First you have to fork the ksctl repository. [fork](https://github.com/kubesimplify/ksctl/fork)
+First you have to fork the ksctl repository. [fork](https://github.com/ksctl/ksctl/fork)
 ```bash
 cd <path> # to you directory where you want to clone ksctl
 mkdir <directory name> # create a directory
 cd <directory name> # go inside the directory
 git clone https://github.com/${YOUR_GITHUB_USERNAME}/ksctl.git # clone you fork repository
 cd ksctl # go inside the ksctl directory
-git remote add upstream https://github.com/kubesimplify/ksctl.git # set upstream
+git remote add upstream https://github.com/ksctl/ksctl.git # set upstream
 git remote set-url --push upstream no_push # no push to upstream
 ```
 
@@ -91,4 +91,4 @@ If you need help contributing to the ksctl project, you can ask for help on the 
 
 We appreciate your contributions to the ksctl project!
 
-Some of our contributors [ksctl contributors](https://github.com/kubesimplify/ksctl/graphs/contributors)
+Some of our contributors [ksctl contributors](https://github.com/ksctl/ksctl/graphs/contributors)

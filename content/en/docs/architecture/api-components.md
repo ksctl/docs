@@ -12,10 +12,10 @@ weight: 2
 ## Design
 
 ### Overview architecture of ksctl
-![light mode](/docs/img/ksctl-arch.svg)
+![light mode](/img/ksctl-arch.svg)
 
 ### Managed Cluster creation & deletion
-![light mode](/docs/img/ksctl-managed-sequence.svg)
+![light mode](/img/ksctl-managed-sequence.svg)
 
 ### High Available Cluster creation & deletion
-![light mode](/docs/img/ksctl-ha-sequence.svg)
+![light mode](/img/ksctl-ha-sequence.svg)

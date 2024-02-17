@@ -22,7 +22,7 @@ these are confidential information so shouldn't be shared with anyone
 
 subscription id using your subscription
 
-![azure-subscription](/docs/img/azure/azure-subs-id.png)
+![azure-subscription](/img/azure/azure-subs-id.png)
 
 
 ### Azure Tenant ID
@@ -32,11 +32,11 @@ subscription id using your subscription
 Azure Dashboard contains all the credentials required
 
 
-![azure-dashboard](/docs/img/azure/azure-dashboard.png)
+![azure-dashboard](/img/azure/azure-dashboard.png)
 
 lets get the tenant id from the Azure
 
-![](/docs/img/azure/azure-tenantid.png)
+![](/img/azure/azure-tenantid.png)
 
 
 
@@ -45,11 +45,11 @@ lets get the tenant id from the Azure
 it represents the id of app created
 
 
-![](/docs/img/azure/azure-app-reg.png)
+![](/img/azure/azure-app-reg.png)
 
-![](/docs/img/azure/azure-create-app-reg.png)
+![](/img/azure/azure-create-app-reg.png)
 
-![](/docs/img/azure/azure-clientid.png)
+![](/img/azure/azure-clientid.png)
 
 
 
@@ -57,13 +57,13 @@ it represents the id of app created
 
 it represents the secret associated with the app in order to use it
 
-![create app secret](/docs/img/azure/azure-client-secret1.png)
+![create app secret](/img/azure/azure-client-secret1.png)
 
 
-![after-click](/docs/img/azure/azure-client-secret.png)
+![after-click](/img/azure/azure-client-secret.png)
 
 
-![copy-secret](/docs/img/azure/azure-client-secret2.png)
+![copy-secret](/img/azure/azure-client-secret2.png)
 
 ### Assign Role to your app
 
@@ -72,7 +72,7 @@ select the **Role Assignment** and then click **Add > Add Role Assignment**
 create a new role and when selecting the identity specify the name of the app
 Here you can customize the role this app has
 
-![role-assign-app](/docs/img/azure/azure-role-app.png)
+![role-assign-app](/img/azure/azure-role-app.png)
 
 
 ## How these credentials are used by ksctl
@@ -127,7 +127,7 @@ clusters which are managed by the cloud provider
 {{% alert color="success" title="Managed Cluster" %}}
 
 <video width="360" height="202" controls>
-<source src="/docs/videos/ksctl-azure-managed.mp4" type="video/mp4" />
+<source src="/videos/ksctl-azure-managed.mp4" type="video/mp4" />
 Your browser does not support the video tag.
 </video>
 {{% /alert %}}
@@ -136,7 +136,7 @@ Your browser does not support the video tag.
 {{% alert color="success" title="Highly Available Cluster" %}}
 
 <video width="360" height="202" controls>
-<source src="/docs/videos/ksctl-azure-ha.mp4" type="video/mp4" />
+<source src="/videos/ksctl-azure-ha.mp4" type="video/mp4" />
 Your browser does not support the video tag.
 </video>
 {{% /alert %}}

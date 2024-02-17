@@ -4,7 +4,7 @@ description: How to contribute to the ksctl-docs
 ---
 
 {{% pageinfo %}}
-Repository: kubesimplify/ksctl-docs
+Repository: ksctl/docs
 {{% /pageinfo %}}
 
 
