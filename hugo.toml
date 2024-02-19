@@ -172,7 +172,7 @@ enable = false
 
 [[params.links.user]]
   name ="Twitter"
-  url = "https://twitter.com/kubesimplify"
+  url = "https://twitter.com/ksctl_k8s"
   icon = "fab fa-twitter"
   desc = "Follow us on Twitter to get the latest news!"
 

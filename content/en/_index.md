@@ -75,7 +75,7 @@ We do a contributions workflow on **GitHub**. New users are always welcome!
 {{% /blocks/feature %}}
 
 {{% blocks/feature icon="fab fa-twitter" title="Follow us on Twitter!"
-    url="https://twitter.com/kubesimplify" %}}
+    url="https://twitter.com/ksctl_k8s" %}}
 For announcement of latest features etc.
 {{% /blocks/feature %}}
 

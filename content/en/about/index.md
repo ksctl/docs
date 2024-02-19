@@ -38,7 +38,7 @@ The ksctl project by kubesimplify is a Cloud Agnostic Kubernetes Management comm
 
 # Ksctl Core
 {.text-center}
-Repo: Kubesimplify/ksctl | Hosts the core functionalities of ksctl
+Repo: ksctl/ksctl | Hosts the core functionalities of ksctl
 {.text-center}
 {{% /blocks/section %}}
 
@@ -47,7 +47,7 @@ Repo: Kubesimplify/ksctl | Hosts the core functionalities of ksctl
 
 # Ksctl CLI
 {.text-center}
-Repo: Kubesimplify/ksctl-cli | Hosts the CLI part of ksctl for users
+Repo: ksctl/cli | Hosts the CLI part of ksctl for users
 {.text-center}
 {{% /blocks/section %}}
 
