@@ -62,7 +62,7 @@ what? why? How?
 The commit message should be structured as follows:
 
 ```
-<type>[optional scope]: <description>
+<type>(optional scope): <description>
 
 [optional body]
 
@@ -76,7 +76,7 @@ For more detailed information on conventional commits, you can refer to the [off
 Each commit must be signed-off. You can do this by adding a sign-off line to your commit messages.
 When committing changes in your local branch, add the -S flag to the git commit command:
 
-```
+```bash
 $ git commit -S -m "YOUR_COMMIT_MESSAGE"
 # Creates a signed commit
 ```
