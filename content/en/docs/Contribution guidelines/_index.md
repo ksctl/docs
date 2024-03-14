@@ -46,17 +46,80 @@ update: <Title>
 ```
 
 ### Body
+
 Follow the PR or Issue template
 add all the significant changes to the PR description
 
 ### Commit messages
+
 mention the detailed description in the git commits.
 what? why? How?
 
-**each commits must be sign-off**
+**Each commit must be sign-off and should follow conventional commit guidelines.**
+
+### Conventional Commits
+
+The commit message should be structured as follows:
+
+```
+<type>(optional scope): <description>
+
+[optional body]
+
+[optional footer(s)]
+```
+
+For more detailed information on conventional commits, you can refer to the [official Conventional Commits specification](https://www.conventionalcommits.org/en/v1.0.0/).
+
+### Sign-off
+
+Each commit must be signed-off. You can do this by adding a sign-off line to your commit messages.
+When committing changes in your local branch, add the -S flag to the git commit command:
+
+```bash
+$ git commit -S -m "YOUR_COMMIT_MESSAGE"
+# Creates a signed commit
+```
+
+You can find more comprehensive details on how to sign off git commits by referring to the [GitHub section on signing commits](https://docs.github.com/en/authentication/managing-commit-signature-verification/signing-commits).
+
+### Verification of Commit Signatures
+
+You have the option to sign commits and tags locally, which adds a layer of assurance regarding the origin of your changes. GitHub designates commits or tags as either "Verified" or "Partially verified" if they possess a GPG, SSH, or S/MIME signature that is cryptographically valid.
+
+**GPG Commit Signature Verification**
+
+To sign commits using GPG and ensure their verification on GitHub, adhere to these steps:
+
+* Check for existing GPG keys.
+* Generate a new GPG key.
+* Add the GPG key to your GitHub account.
+* Inform Git about your signing key.
+* Proceed to sign commits.
+
+**SSH Commit Signature Verification**
+
+To sign commits using SSH and ensure their verification on GitHub, follow these steps:
+
+* Check for existing SSH keys.
+* Generate a new SSH key.
+* Add an SSH signing key to your GitHub account.
+* Inform Git about your signing key.
+* Proceed to sign commits.
+
+**S/MIME Commit Signature Verification**
+
+To sign commits using S/MIME and ensure their verification on GitHub, follow these steps:
+
+* Inform Git about your signing key.
+* Proceed to sign commits.
+
+For more detailed instructions, refer to [GitHub's documentation on commit signature verification](https://docs.github.com/en/authentication/managing-commit-signature-verification/about-commit-signature-verification)
 
 # Development
+
 First you have to fork the ksctl repository. [fork](https://github.com/ksctl/ksctl/fork)
+
 ```bash
 cd <path> # to you directory where you want to clone ksctl
 mkdir <directory name> # create a directory
@@ -74,7 +137,6 @@ Info | data
 Url | `https://jenkins.ksctl.com/`
 UserName | `ksctl`
 pass | `77777`
-
 
 Before submitting a code change, it is important to test your changes thoroughly. You can do this by running the unit tests and integration tests.
 
