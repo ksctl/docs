@@ -102,7 +102,7 @@ clusters which are managed by the user not by cloud provider
     using K3s kubernetes distribution which is lightweight
 
 custom components being used
-- MySQL database VM
+- Etcd database VM
 - HAProxy loadbalancer VM for controlplane nodes
 - controlplane VMs
 - workerplane VMs
