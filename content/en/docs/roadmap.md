@@ -65,7 +65,7 @@ flowchart LR;
 8. A single source of truth for Both CLI and ksctl server
 9. Dashboard for Ksctl
 10. Kubeadm support
-11. Data store - etcd (follow-up cluster of datastores)
+11. ~~Data store - etcd (follow-up cluster of datastores)~~
 12. Production Ready Apps
 13. ~~Development Ready Apps~~
 14. ~~additional kubernetes application support~~
