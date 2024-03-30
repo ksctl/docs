@@ -33,7 +33,7 @@ flowchart LR;
 
   web--AWS-->aws{Types};
   aws:::blue--managed-->awsm[Create & Delete]:::red;
-  aws--HA-->awsha[Create & Delete]:::red;
+  aws--HA-->awsha[Create & Delete]:::green;
 
   web--Azure-->az{Types};
   az:::green--managed-->azsm[Create & Delete]:::green;
@@ -43,10 +43,12 @@ flowchart LR;
   k3s:::green--HA-->k3ha[Create & Delete]:::green;
 
   web2--Kubeadm-->kubeadm{Types};
-  kubeadm:::blue--HA-->kubeadmha[Create & Delete]:::red;
+  kubeadm:::blue--HA-->kubeadmha[Create & Delete]:::green;
 
   web3--Local-Store-->slocal{Local}:::green;
-  web3--Remote-Store-->rlocal{Remote}:::red;
+  web3--Remote-Store-->rlocal{Remote}:::green;
+  rLocal--Provider-->mongo[MongoDB]:::green;
+  
 
 ```
 
