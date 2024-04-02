@@ -28,10 +28,8 @@ Refer : `internal/storage/external/mongodb`
 7. Don't forget to call the **storage.Kill()** when you want to stop the complte execution. it guarantees that it will wait till all the pending operations on the storage are completed
 8. Custom Storage Directory you would need to specify the env var `KSCTL_CUSTOM_DIR_ENABLED` the value must be directory names wit space separated
 9. specify the **Required ENV vars**
-    - `export MONGODB_USER="<username>"`
-    - `export MONGODB_PASSWORD="<password>"`
-    - `export MONGODB_DNS="<DNSSeedlist>"`
-    also it uses mongodb uri as **mongodb+srv**
+    - `export MONGODB_URI=""`
+    > Hint: mongodb://${username}:${password}@${domain}:${port} or mongo+atlas mongodb+srv://${username}:${password}@${domain}
 
 ## Things to look for
 1. make sure when you recieve return data from **Read()**. copy the address value to the storage pointer variable and not the address!
