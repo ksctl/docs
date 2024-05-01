@@ -17,6 +17,3 @@ We are using it as follows:
 Currently all VMs require SSH authentication and all ports are open. But in future versions it will be resolved
 {{% /alert %}}
 
-{{% alert color= "warning" title="In Progress" %}}
-Document available Kubernetes version
-{{% /alert %}}

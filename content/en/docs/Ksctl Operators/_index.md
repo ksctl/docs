@@ -1,8 +1,14 @@
 ---
-title: Ksctl Operators
+title: Ksctl Components
 description: Place of all the documentation for the Operators used specifically for k8s clusters
 categories: [Examples, Placeholders]
 tags: [test, docs]
 ---
 
-Operator docs is pending
+Operators
+- ksctl agent
+- ksctl storage controller
+- ksctl application controller
+
+
+

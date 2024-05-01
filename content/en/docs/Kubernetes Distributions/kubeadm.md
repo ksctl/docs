@@ -7,6 +7,5 @@ tags: [Kubeadm, ha, core]
 
 Kubeadm for HA Cluster on supported provider
 
-{{% alert color= "warning" title="TBD" %}}
-No Yet supported
-{{% /alert %}}
+Kubeadm support is added with etcd as datastore
+

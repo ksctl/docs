@@ -9,8 +9,7 @@ tags: [aws, ha, managed, core]
 Aws support for HA and Managed Clusters
 {{% /pageinfo %}}
 
-{{% alert color="warning" title="Caution" %}}
-we need credentials to access clusters
-
-these are confidential information so shouldn't be shared with anyone
-{{% /alert %}}
+Support for aws provider is added.
+Supported functionality
+- [ ] Managed EKS
+- [x] Self-managed HA cluster with k3s and kubeadm
