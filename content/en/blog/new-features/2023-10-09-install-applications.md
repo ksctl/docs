@@ -5,6 +5,8 @@ author: Dipankar Das ([@DipankarDas011](https://twitter.com/DipankarDas011))
 
 ---
 
+> **DEPRECATED**
+
 {{% alert title="Note `Experimental`" %}}
 Currently Argocd, Kube-Prometheus Stack, Cilium ... is supported
 {{% /alert %}}
