@@ -1,7 +1,7 @@
 ---
 title: Google Cloud Platform
 description: >
-  Azure Cloud Provider
+  Google Cloud Platform
 categories: [Cloud Provider]
 tags: [aws, ha, managed, core]
 ---
