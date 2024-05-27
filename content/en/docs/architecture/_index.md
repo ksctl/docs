@@ -1,6 +1,6 @@
 ---
 title: Architecture
-description: What does your user need to know to try your project?
+description: Overall architecture of Ksctl
 categories: [Examples, Placeholders]
 tags: [test, docs]
 weight: 2
