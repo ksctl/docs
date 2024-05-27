@@ -1,7 +1,7 @@
 ---
 title: Cloud Controller
 description: >
-  A short lead description about this content page. It can be **bold** or _italic_ and can be split over multiple paragraphs.
+  The Component of Ksctl responsible for creating and managing clusters for different Cloud platforms.
 categories: [Examples]
 ---
 
