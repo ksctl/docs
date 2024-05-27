@@ -1,6 +1,6 @@
 ---
 title: CI/CD Pipelines
-description: What does your user need to know to try your project?
+description: Pipelines used in Ksctl
 categories: [Examples, Placeholders]
 tags: [test, docs]
 weight: 2
