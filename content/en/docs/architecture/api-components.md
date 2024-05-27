@@ -1,6 +1,6 @@
 ---
 title: Api Components
-description: What does your user need to know to try your project?
+description: Learn how different components communicate with each other via API's and automation scripts to serve you in best way possible.
 categories: [Examples, Placeholders]
 tags: [test, docs]
 weight: 2
