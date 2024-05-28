@@ -1,7 +1,7 @@
 ---
 title: Amazon Web Services
 description: >
-  Azure Cloud Provider
+  Amazon Web Services
 categories: [Cloud Provider]
 tags: [aws, ha, managed, core]
 ---
