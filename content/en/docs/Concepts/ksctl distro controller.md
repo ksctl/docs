@@ -1,7 +1,7 @@
 ---
 title: Distribution Controller
 description: >
-  The Component of Ksctl responsible for selecting the type of cluster (Kubeadm or K3s).
+  The Component of Ksctl responsible for selecting the type of Bootstrap solution (Kubeadm or K3s).
 categories: [Examples]
 ---
 
