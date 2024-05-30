@@ -1,7 +1,7 @@
 ---
 title: Core Manager
 description: >
-  A short lead description about this content page. It can be **bold** or _italic_ and can be split over multiple paragraphs.
+  The Component of Ksctl responsible for managing Cloud controller and Distribution controller. It has multiple types of managers
 categories: [Examples]
 ---
 
