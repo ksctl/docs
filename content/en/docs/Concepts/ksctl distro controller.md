@@ -1,7 +1,7 @@
 ---
 title: Distribution Controller
 description: >
-  A short lead description about this content page. It can be **bold** or _italic_ and can be split over multiple paragraphs.
+  The Component of Ksctl responsible for selecting the type of Bootstrap solution (Kubeadm or K3s).
 categories: [Examples]
 ---
 
