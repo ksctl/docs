@@ -4,7 +4,9 @@ description: What does your user need to know to try your project?
 tags: [roadmap, core]
 ---
 
-## Current Status on Supported Providers
+{{% pageinfo %}}
+Current Status on Supported Providers
+{{% /pageinfo %}}
 
 <div class="-text-green">Done</div>
 <div class="-text-red">Not Started</div>
@@ -50,26 +52,4 @@ flowchart LR;
   rlocal--Provider-->mongo[MongoDB]:::green;
 
 ```
-
-
-
-## Future Plans
-
-DEPRICATED!!
-
-refer to knowledge docs
-
-1. add distributions of binaries via the package managers
-2. ~~AWS Support~~
-3. GCP support
-4. Create RestAPI for using ksctl without CLI
-5. Create server running ksctl which can reconsile state automatically
-6. Dashboard for Ksctl
-7. ~~Kubeadm support~~
-8. ~~Data store - etcd (follow-up cluster of datastores)~~
-9. Production Ready Apps
-10. ~~Development Ready Apps~~
-11. ~~additional kubernetes application support~~
-12. ~~improve the High avilability cluster architecture~~
-13. ~~improve logging in local~~
 

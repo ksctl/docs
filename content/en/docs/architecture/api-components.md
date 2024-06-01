@@ -7,7 +7,9 @@ weight: 2
 ---
 
 
-# API Components
+{{% pageinfo %}}
+Core Design Components
+{{% /pageinfo %}}
 
 ## Design
 
