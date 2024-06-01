@@ -5,7 +5,9 @@ categories: [Storage Provider]
 tags: [storage, core]
 ---
 
-# Local Storage
+{{% pageinfo %}}
+Local as a Storage Provider
+{{% /pageinfo %}}
 
 Refer: `internal/storage/local`
 

@@ -5,7 +5,9 @@ description: What does your user need to know to try your project?
 tags: [storage, core]
 ---
 
-# External MongoDB Storage
+{{% pageinfo %}}
+External MongoDB as a Storage provider
+{{% /pageinfo %}}
 
 Refer : `internal/storage/external/mongodb`
 
