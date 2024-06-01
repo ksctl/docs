@@ -8,19 +8,19 @@ Repository: ksctl/ksctl
 {{% /pageinfo %}}
 
 
-## Test out both All Mock and Unit tests
+## Test out both All Mock and Unit tests and lints
 ```bash
 make test
 ```
 
 ## Test out both All Unit tests
 ```bash
-make unit_test_api
+make unit_test_all
 ```
 
 ## Test out both All Mock tests
 ```bash
-make mock_test
+make mock_all
 ```
 
 ## for E2E tests on local

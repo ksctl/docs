@@ -11,7 +11,7 @@ menu: {main: {weight: 10}}
 
 {{% blocks/lead %}}
 
-The ksctl project by kubesimplify is a Cloud Agnostic Kubernetes Management command-line tool that helps developers and administrators to manage multiple Kubernetes clusters running on multiple cloud environments with options to choose from Self-Managed HA clusters to Managed Clusters provided by cloud providers
+The ksctl project by ksctl is a Cloud Agnostic Kubernetes Management tool that helps developers and administrators to manage multiple Kubernetes clusters running on multiple cloud environments with options to choose from Self-Managed HA clusters to Managed Clusters provided by cloud providers
 
 {{% /blocks/lead %}}
 
