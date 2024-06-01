@@ -132,11 +132,6 @@ git remote set-url --push upstream no_push # no push to upstream
 
 ## Trying out code changes
 
-Info | data
--|-
-Url | `https://jenkins.ksctl.com/`
-UserName | `ksctl`
-pass | `77777`
 
 Before submitting a code change, it is important to test your changes thoroughly. You can do this by running the unit tests and integration tests.
 

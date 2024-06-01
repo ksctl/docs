@@ -7,7 +7,7 @@ tags: [test, docs]
 
 Operators
 - ksctl agent
-- ksctl storage controller
+- ksctl stateimporter
 - ksctl application controller
 
 
