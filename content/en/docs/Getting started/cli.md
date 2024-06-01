@@ -18,12 +18,12 @@ their are various method
   {{% tab header="**Operating System**:" disabled=true /%}}
   {{% tab header="Linux" %}}
 ```bash
-curl -sfL https://raw.githubusercontent.com/ksctl/cli/main/scripts/install.sh | python3 -
+curl -sfL https://get.ksctl.com | python3 -
 ```
   {{% /tab %}}
   {{% tab header="MacOS" %}}
 ```bash
-curl -sfL https://raw.githubusercontent.com/ksctl/cli/main/scripts/install.sh | python3 -
+curl -sfL https://get.ksctl.com | python3 -
 ```
   {{% /tab %}}
   {{% tab header="Windows" lang="sw" %}}
