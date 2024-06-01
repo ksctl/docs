@@ -19,3 +19,7 @@ It utilizes the these 2 methods:
 so before the ksctl agent is deployed we first create this pod which in turn runs a http server having `storageProvider: store-kubernetes` and uses `storage.Import()` method
 
 once we get 200 OK responses from the http server we remove the pod and move to ksctl agent deployment so that it can use the state file present in configmaps, secrets
+
+{{% alert title="Warning" color="warning" %}}
+If the storageType is external (mongodb), we don't need this to be happening instead we create kubernetes secret where the external storage solution environment variable is set and also we need to customize the ksctl agent deployment
+{{% /alert %}}
