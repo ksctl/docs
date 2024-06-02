@@ -24,17 +24,17 @@ their are various method
   {{% tab header="**Operating System**:" disabled=true /%}}
   {{% tab header="Linux" %}}
 ```bash
-curl -sfL https://get.ksctl.com | python3 -
+curl -sfL https://get.ksctl.com/install/linux | python3 -
 ```
   {{% /tab %}}
   {{% tab header="MacOS" %}}
 ```bash
-curl -sfL https://get.ksctl.com | python3 -
+curl -sfL https://get.ksctl.com/install/macos | python3 -
 ```
   {{% /tab %}}
   {{% tab header="Windows" lang="sw" %}}
 ```ps1
-iwr -useb https://raw.githubusercontent.com/ksctl/cli/main/install.ps1 | iex
+iwr -useb https://get.ksctl.com/install/windows | iex
 ```
   {{% /tab %}}
 {{< /tabpane >}}
@@ -46,17 +46,17 @@ iwr -useb https://raw.githubusercontent.com/ksctl/cli/main/install.ps1 | iex
   {{% tab header="**Operating System**:" disabled=true /%}}
   {{% tab header="Linux" %}}
 ```bash
-bash <(curl -s https://raw.githubusercontent.com/ksctl/cli/main/scripts/uninstall.sh)
+bash <(curl -s https://get.ksctl.com/uninstall/linux)
 ```
   {{% /tab %}}
   {{% tab header="MacOS" %}}
 ```bash
-zsh <(curl -s https://raw.githubusercontent.com/ksctl/cli/main/scripts/uninstall.sh)
+zsh <(curl -s https://get.ksctl.com/uninstall/macos)
 ```
   {{% /tab %}}
   {{% tab header="Windows" lang="sw" %}}
 ```ps1
-iwr -useb https://raw.githubusercontent.com/ksctl/cli/main/scripts/uninstall.ps1 | iex
+iwr -useb https://get.ksctl.com/uninstall/windows | iex
 ```
   {{% /tab %}}
 {{< /tabpane >}}
