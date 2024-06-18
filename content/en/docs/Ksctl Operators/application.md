@@ -23,6 +23,16 @@ this is current available on all clusters created by `ksctl@v1.2.0`
 It has a dependency on `ksctl agent`
 {{% /alert %}}
 
+### Supported Apps and CNI
+| Name | Type | Category
+|- | - | - |
+| Argo-CD | App | CI/CD |
+| Argo-Rollouts | App | CI/CD |
+| Istio | App | Service Mesh |
+| Cilium | Cni | - |
+| Flannel | Cni | - |
+| Kube-Prometheus | App | Monitoring |
+
 #### Example usage
 
 Lets deploy `argocd@v2.9.X`, `prometheus-stack@v55.X.Y`
