@@ -24,14 +24,14 @@ It has a dependency on `ksctl agent`
 {{% /alert %}}
 
 ### Supported Apps and CNI
-| Name | Type | Category
-|- | - | - |
-| Argo-CD | App | CI/CD |
-| Argo-Rollouts | App | CI/CD |
-| Istio | App | Service Mesh |
-| Cilium | Cni | - |
-| Flannel | Cni | - |
-| Kube-Prometheus | App | Monitoring |
+| Name | Type | Category | Ksctl_Name |
+|- | - | - | - |
+| Argo-CD | App | CI/CD | argocd |
+| Argo-Rollouts | App | CI/CD | argo-rollouts |
+| Istio | App | Service Mesh | istio |
+| Cilium | Cni | - | cilium |
+| Flannel | Cni | - | flannel |
+| Kube-Prometheus | App | Monitoring | prometheus-stack |
 
 #### Example usage
 
