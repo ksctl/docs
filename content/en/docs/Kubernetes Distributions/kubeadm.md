@@ -11,3 +11,6 @@ Kubeadm for HA Cluster on supported provider
 
 Kubeadm support is added with etcd as datastore
 
+{{% alert color= "info" title="Info" %}}
+Here the Default CNI is flannel
+{{% /alert %}}
