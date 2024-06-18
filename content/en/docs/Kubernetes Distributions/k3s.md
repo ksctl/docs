@@ -15,7 +15,7 @@ We are using it as follows:
 * workerplane (k3s agent)
 * datastore (etcd members)
 
-{{% alert color= "warning" title="Security" %}}
-Currently all VMs require SSH authentication and all ports are open. But in future versions it will be resolved
+{{% alert color= "info" title="Info" %}}
+Here the Default CNI is flannel
 {{% /alert %}}
 
