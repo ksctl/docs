@@ -1,7 +1,7 @@
 ---
-title: Documentation
-linkTitle: Docs
-menu: {main: {weight: 20}}
+title: Develop Documentation
+linkTitle: Develop
+description: develop branch documentation
 weight: 20
 ---
 
