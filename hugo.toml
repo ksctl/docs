@@ -85,6 +85,15 @@ description = "A Ksctl Docs page"
 [outputs]
 section = ["HTML", "print", "RSS"]
 
+[[params.versions]]
+  version = "master"
+  url = "/docs/develop"
+
+[[params.versions]]
+  version = "stable"
+  url = "/docs/stable"
+
+
 [params]
 copyright = "The Ksctl Authors"
 # privacy_policy = "https://policies.google.com/privacy"
@@ -107,7 +116,7 @@ archived_version = false
 
 # A link to latest version of the docs. Used in the "version-banner" partial to
 # point people to the main doc site.
-#url_latest_version = "https://example.com"
+# url_latest_version = "https://docs.ksctl.com/docs/stable"
 
 # Repository configuration (URLs for in-page links to opening issues and suggesting changes)
 github_repo = "https://github.com/ksctl/docs"
