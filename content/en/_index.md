@@ -83,4 +83,9 @@ We do a contributions workflow on **GitHub**. New users are always welcome!
 For announcement of latest features etc.
 {{% /blocks/feature %}}
 
+{{% blocks/feature icon="fab fa-discord" title="Join our Discord channel!"
+    url="https://discord.gg/pWjtKxVrMe" %}}
+Community calls, discussions, etc.
+{{% /blocks/feature %}}
+
 {{% /blocks/section %}}
