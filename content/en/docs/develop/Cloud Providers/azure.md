@@ -99,7 +99,7 @@ ksctl cred
 #### Highly Available cluster
 clusters which are managed by the user not by cloud provider
 
-    using K3s kubernetes distribution which is lightweight
+you can choose between k3s and kubeadm as your bootstrap tool
 
 custom components being used
 - Etcd database VM
