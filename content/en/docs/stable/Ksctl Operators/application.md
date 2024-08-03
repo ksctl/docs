@@ -30,16 +30,16 @@ once you have `kubectl apply` the stack it will start deploying the applications
 ### Supported Apps and CNI
 | Name | Type | Category | Ksctl_Name |
 |- | - | - | - |
-| Argo-CD | standard | CI/CD | standard-argocd |
-| Argo-Rollouts | standard | CI/CD | standard-argorollouts |
-| Istio | standard | Service Mesh | standard-istio |
-| Cilium | standard | - | standard-cilium |
-| Flannel | standard | - | standard-flannel |
-| Kube-Prometheus | standard | Monitoring | standard-kubeprometheus |
+| Argo-CD | App | CI/CD | argocd |
+| Argo-Rollouts | App | CI/CD | argo-rollouts |
+| Istio | App | Service Mesh | istio |
+| Cilium | Cni | - | cilium |
+| Flannel | Cni | - | flannel |
+| Kube-Prometheus | App | Monitoring | prometheus-stack |
 
 #### Example usage
 
-Lets deploy `argocd@v2.9.X`, `kube-prometheus-stack@v55.X.Y`
+Lets deploy `argocd@v2.9.X`, `prometheus-stack@v55.X.Y`
 ```yaml
 apiVersion: application.ksctl.com/v1alpha1
 kind: Stack
@@ -47,11 +47,11 @@ metadata:
   name: monitoring-plus-gitops
 spec:
   components:
-    - appName: standard-argocd
+    - appName: argocd
       appType: app
       version: v2.9.12
 
-    - appName: standard-kubeprometheus
+    - appName: prometheus-stack
       appType: app
       version: "55.0.0"
 ```
@@ -70,11 +70,11 @@ metadata:
   name: monitoring-plus-gitops
 spec:
   components:
-    - appName: standard-argocd
+    - appName: argocd
       appType: app
-      version: latest
+      version: stable
 
-    - appName: standard-kubeprometheus
+    - appName: prometheus-stack
       appType: app
       version: latest
 ```
