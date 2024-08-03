@@ -8,6 +8,21 @@ tags: [roadmap, core]
 Current Status on Supported Providers
 {{% /pageinfo %}}
 
+
+{{< highlight go "linenos=table,hl_lines=8 15-17,linenostart=199" >}}
+import (
+  "fmt"
+  "os"
+  "strings"
+
+  "github.com/spf13/cobra"
+)
+
+func main() {
+  cdcdcd
+}
+{{< / highlight >}}
+
 <div class="-text-green">Done</div>
 <div class="-text-red">Not Started</div>
 <div class="-text-black">No Plans</div>
@@ -34,7 +49,7 @@ flowchart LR;
   local--HA-->localha[Create & Delete]:::black;
 
   web--AWS-->aws{Types};
-  aws:::blue--managed-->awsm[Create & Delete]:::red;
+  aws:::green--managed-->awsm[Create & Delete]:::green;
   aws--HA-->awsha[Create & Delete]:::green;
 
   web--Azure-->az{Types};
