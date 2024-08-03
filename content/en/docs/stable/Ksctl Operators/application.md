@@ -23,6 +23,10 @@ this is current available on all clusters created by `ksctl@v1.2.0`
 It has a dependency on `ksctl agent`
 {{% /alert %}}
 
+{{% alert title="About Lifecycle of application stack" color="info" %}}
+once you have `kubectl apply` the stack it will start deploying the applications in the stack, if you want to upgrade the applications in the stack you can edit the stack and change the version of the application and apply the stack again, it will uninstall the previous version and install the new version. Basically it performs reinstall of the stack which might cause downtime
+{{% /alert %}}
+
 ### Supported Apps and CNI
 | Name | Type | Category | Ksctl_Name |
 |- | - | - | - |

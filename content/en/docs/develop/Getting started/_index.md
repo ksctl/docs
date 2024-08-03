@@ -23,12 +23,12 @@ their are various method
 {{< tabpane text=true >}}
   {{% tab header="**Operating System**:" disabled=true /%}}
   {{% tab header="Linux" %}}
-```bash
+```shell
 curl -sfL https://get.ksctl.com/install/linux | python3 -
 ```
   {{% /tab %}}
   {{% tab header="MacOS" %}}
-```bash
+```shell
 curl -sfL https://get.ksctl.com/install/macos | python3 -
 ```
   {{% /tab %}}
@@ -45,12 +45,12 @@ iwr -useb https://get.ksctl.com/install/windows | iex
 {{< tabpane text=true >}}
   {{% tab header="**Operating System**:" disabled=true /%}}
   {{% tab header="Linux" %}}
-```bash
+```shell
 bash <(curl -s https://get.ksctl.com/uninstall/linux)
 ```
   {{% /tab %}}
   {{% tab header="MacOS" %}}
-```bash
+```shell
 zsh <(curl -s https://get.ksctl.com/uninstall/macos)
 ```
   {{% /tab %}}
@@ -70,7 +70,7 @@ iwr -useb https://get.ksctl.com/uninstall/windows | iex
 {{< tabpane text=true >}}
   {{% tab header="**Operating System**:" disabled=true /%}}
   {{% tab header="Linux/MacOS" %}}
-```bash
+```shell
 make install_linux
 
 # macOS on M1
