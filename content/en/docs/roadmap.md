@@ -9,20 +9,6 @@ Current Status on Supported Providers
 {{% /pageinfo %}}
 
 
-{{< highlight go "linenos=table,hl_lines=8 15-17,linenostart=199" >}}
-import (
-  "fmt"
-  "os"
-  "strings"
-
-  "github.com/spf13/cobra"
-)
-
-func main() {
-  cdcdcd
-}
-{{< / highlight >}}
-
 <div class="-text-green">Done</div>
 <div class="-text-red">Not Started</div>
 <div class="-text-black">No Plans</div>
