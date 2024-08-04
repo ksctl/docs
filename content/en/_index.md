@@ -17,11 +17,15 @@ title: Ksctl Docs
 {{< blocks/link-down color="info" >}}
 {{< /blocks/cover >}}
 
-
 {{% blocks/lead color="primary" %}}
-The ksctl project by ksctl is a Cloud Agnostic Kubernetes Management command-line tool that helps developers and administrators to manage multiple Kubernetes clusters running on multiple cloud environments
+
+**Status: _Technical Preview_**
+
+It aims to simplify a collection of kubernetes clusters running on different cloud providers. It provides a simple and intuitive interface for managing Kubernetes clusters. It is designed to be efficient and can perform tasks quickly and without the need for additional tools. It is a powerful tool that can be used to perform a wide range of tasks.
 
 It provides a simple and intuitive interface for performing common tasks such as creating, deleting, and managing Kubernetes resources. ksctl is designed to be easy to use, even for developers who are new to Kubernetes.
+
+It is already a valuable tool for developers who want to manage Kubernetes clusters using our CLI.
 {{% /blocks/lead %}}
 
 <!-- for the icons refer https://fontawesome.com/ -->
@@ -45,8 +49,7 @@ Problems in the Ecosystem
 
 {{% blocks/section color="dark" type="row" %}}
 {{% blocks/feature icon="fa-gauge-high" title="Fast" %}}
-Creates Cloud-Managed or Self-
-managed HA cluster ~5 minutes
+Creates Cloud-Managed or Self-managed HA cluster ~5 minutes
 {{% /blocks/feature %}}
 
 {{% blocks/feature icon="fa-feather-pointed" title="Fast" %}}
