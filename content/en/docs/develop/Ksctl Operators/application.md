@@ -51,7 +51,7 @@ need to add the overriding docs
 
 ##### **SpinKube**
 
-**How to use it**
+**How to use it (Basic Usage)**
 
 ```yaml
 apiVersion: application.ksctl.com/v1alpha1
@@ -72,9 +72,43 @@ curl localhost:8083/hello
 ```
 
 
+**Overrides available**
+```yaml
+apiVersion: application.ksctl.com/v1alpha1
+kind: Stack
+metadata:
+  name: wasm-spinkube
+spec:
+  stacks:
+  - stackId: production-wasmedge-kwasm
+    appType: app
+    overrides:
+      spinkube-operator:
+        version: <string> # version of the spinkube-operator-shim-executor are same for shim-execuator, runtime-class, shim-executor-crd, spinkube-operator
+        helmOperatorChartOverridings: <map[string]any> # helm chart overridings, spinkube-operator
+
+      spinkube-operator-shim-executor:
+        version: <string> # version of the spinkube-operator-shim-executor are same for shim-execuator, runtime-class, shim-executor-crd, spinkube-operator
+
+      spinkube-operator-runtime-class:
+        version: <string> # version of the spinkube-operator-shim-executor are same for shim-execuator, runtime-class, shim-executor-crd, spinkube-operator
+
+      spinkube-operator-crd:
+        version: <string> # version of the spinkube-operator-shim-executor are same for shim-execuator, runtime-class, shim-executor-crd, spinkube-operator
+
+      cert-manager:
+        version: <string>
+        certmanagerChartOverridings: <map[string]any> # helm chart overridings, cert-manager
+
+      kwasm-operator:
+        version: <string>
+        kwasmOperatorChartOverridings: <map[string]any> # helm chart overridings, kwasm/kwasm-operator
+```
+
+
 ##### **WasmEdge**
 
-**How to use it**
+**How to use it (Basic Usage)**
 
 ```yaml
 apiVersion: application.ksctl.com/v1alpha1
