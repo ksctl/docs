@@ -29,14 +29,122 @@ once you have `kubectl apply` the stack it will start deploying the applications
 {{% /alert %}}
 
 ### Supported Apps and CNI
-| Name | Type | Category | Ksctl_Name |
-|- | - | - | - |
+| Name | Type | Category | Ksctl_Name | More Info |
+|- | - | - | - | - |
 | Argo-CD | standard | CI/CD | standard-argocd |
 | Argo-Rollouts | standard | CI/CD | standard-argorollouts |
 | Istio | standard | Service Mesh | standard-istio |
-| Cilium | standard | - | standard-cilium |
-| Flannel | standard | - | standard-flannel |
+| Cilium | standard | - | cilium |
+| Flannel | standard | - | flannel |
 | Kube-Prometheus | standard | Monitoring | standard-kubeprometheus |
+| SpinKube | production | Wasm | production-spinkube | [Link](#spinkube) |
+| WasmEdge | production | Wasm | production-wasmedge-kwasm | [Link](#wasmedge) |
+
+
+{{% alert title="Note on wasm category apps" color="info" %}}
+Only one of the app under the category `wasm` can be installed at a time we you might need to uninstall one to get another running
+
+also the current implementation of the wasm catorgoty apps annotate all the nodes with kwasm as true
+{{% /alert %}}
+
+need to add the overriding docs
+
+##### **SpinKube**
+
+**How to use it**
+
+```yaml
+apiVersion: application.ksctl.com/v1alpha1
+kind: Stack
+metadata:
+  name: wasm-spinkube
+spec:
+  stacks:
+  - stackId: production-spinkube
+    appType: app
+```
+
+**Demo app**
+```shell
+kubectl apply -f https://raw.githubusercontent.com/spinkube/spin-operator/main/config/samples/simple.yaml
+kubectl port-forward svc/simple-spinapp 8083:80
+curl localhost:8083/hello
+```
+
+
+##### **WasmEdge**
+
+**How to use it**
+
+```yaml
+apiVersion: application.ksctl.com/v1alpha1
+kind: Stack
+metadata:
+  name: wasm-wasmedge
+spec:
+  stacks:
+  - stackId: production-wasmedge-kwasm
+    appType: app
+```
+
+**Demo app**
+```yaml
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: "myapp"
+  namespace: default
+  labels:
+    app: nice
+spec:
+  runtimeClassName: wasmedge
+  containers:
+  - name: myapp
+    image: "docker.io/cr7258/wasm-demo-app:v1"
+    ports:
+    - containerPort: 8080
+      name: http
+  restartPolicy: Always
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: nice
+spec:
+  selector:
+    app: nice
+  type: ClusterIP
+  ports:
+  - name: nice
+    protocol: TCP
+    port: 8080
+    targetPort: 8080
+```
+
+```shell
+# once up and running
+kubectl port-forward svc/nice 8080:8080
+
+# then you can curl the service
+curl localhost:8080
+```
+
+**Overrides available**
+```yaml
+apiVersion: application.ksctl.com/v1alpha1
+kind: Stack
+metadata:
+  name: wasm-wasmedge
+spec:
+  stacks:
+  - stackId: production-wasmedge-kwasm
+    appType: app
+    overrides:
+      kwasm-operator:
+        version: <string>
+        kwasmOperatorChartOverridings: <map[string]any> # helm chart overridings, kwasm/kwasm-operator
+```
 
 #### Example usage
 
