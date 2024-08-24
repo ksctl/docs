@@ -31,12 +31,6 @@ curl -sfL https://get.ksctl.com/install/linux | python3 -
 ```shell
 curl -sfL https://get.ksctl.com/install/macos | python3 -
 ```
-  {{% /tab %}}
-  {{% tab header="Windows" lang="sw" %}}
-```ps1
-iwr -useb https://get.ksctl.com/install/windows | iex
-```
-  {{% /tab %}}
 {{< /tabpane >}}
 
 
@@ -52,11 +46,6 @@ bash <(curl -s https://get.ksctl.com/uninstall/linux)
   {{% tab header="MacOS" %}}
 ```shell
 zsh <(curl -s https://get.ksctl.com/uninstall/macos)
-```
-  {{% /tab %}}
-  {{% tab header="Windows" lang="sw" %}}
-```ps1
-iwr -useb https://get.ksctl.com/uninstall/windows | iex
 ```
   {{% /tab %}}
 {{< /tabpane >}}
@@ -81,15 +70,6 @@ make install_macos_intel
 
 # For uninstalling
 make uninstall
-```
-  {{% /tab %}}
-
-  {{% tab header="Windows" lang="sw" %}}
-```ps1
-./builder.ps1
-
-# for uninstalling
-./uninstall.ps1
 ```
   {{% /tab %}}
 {{< /tabpane >}}
