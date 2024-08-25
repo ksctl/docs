@@ -20,19 +20,9 @@ their are various method
 
 {{% alert title="Install" %}}Steps to Install Ksctl cli tool{{% /alert %}}
 
-{{< tabpane text=true >}}
-  {{% tab header="**Operating System**:" disabled=true /%}}
-  {{% tab header="Linux" %}}
 ```shell
-curl -sfL https://get.ksctl.com/install/linux | python3 -
+curl -sfL https://get.ksctl.com | python3 -
 ```
-  {{% /tab %}}
-  {{% tab header="MacOS" %}}
-```shell
-curl -sfL https://get.ksctl.com/install/macos | python3 -
-```
-{{< /tabpane >}}
-
 
 {{% alert title="Uninstall" %}}Steps to Uninstall Ksctl cli tool{{% /alert %}}
 
@@ -40,12 +30,12 @@ curl -sfL https://get.ksctl.com/install/macos | python3 -
   {{% tab header="**Operating System**:" disabled=true /%}}
   {{% tab header="Linux" %}}
 ```shell
-bash <(curl -s https://get.ksctl.com/uninstall/linux)
+bash <(curl -s https://raw.githubusercontent.com/ksctl/cli/main/scripts/uninstall.sh)
 ```
   {{% /tab %}}
   {{% tab header="MacOS" %}}
 ```shell
-zsh <(curl -s https://get.ksctl.com/uninstall/macos)
+zsh <(curl -s https://raw.githubusercontent.com/ksctl/cli/main/scripts/uninstall.sh)
 ```
   {{% /tab %}}
 {{< /tabpane >}}
