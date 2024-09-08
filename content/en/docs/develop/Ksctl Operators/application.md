@@ -414,7 +414,7 @@ metadata:
 	name: wasm-wasmedge
 spec:
 	stacks:
-	- stackId: production-wasmedge-kwasm
+	- stackId: production-kwasm
 		appType: app
 		overrides:
 			kwasm-operator:
