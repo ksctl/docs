@@ -38,7 +38,7 @@ once you have `kubectl apply` the stack it will start deploying the applications
 | Flannel | standard | - | flannel | [Link](#flannel) |
 | Kube-Prometheus | standard | Monitoring | standard-kubeprometheus | [Link](#kube-prometheus) |
 | SpinKube | production | Wasm | production-spinkube | [Link](#spinkube) |
-| WasmEdge | production | Wasm | production-wasmedge-kwasm | [Link](#wasmedge) |
+| WasmEdge and Wasmtime | production | Wasm | production-kwasm | [Link](#kwasm) |
 
 
 {{% alert title="Note on wasm category apps" color="info" %}}
@@ -319,7 +319,7 @@ spec:
 ```
 
 
-#### **WasmEdge**
+#### **Kwasm**
 
 **How to use it (Basic Usage)**
 
@@ -327,14 +327,14 @@ spec:
 apiVersion: application.ksctl.com/v1alpha1
 kind: Stack
 metadata:
-	name: wasm-wasmedge
+	name: wasm-kwasm
 spec:
 	stacks:
-	- stackId: production-wasmedge-kwasm
+	- stackId: production-kwasm
 		appType: app
 ```
 
-**Demo app**
+**Demo app(wasmedge)**
 ```yaml
 ---
 apiVersion: v1
@@ -369,12 +369,41 @@ spec:
 		targetPort: 8080
 ```
 
+**Demo app(wasmtime)**
+```yaml
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: nice
+  namespace: default
+  labels:
+    app: nice
+spec:
+  template:
+    metadata:
+      name: nice
+      labels:
+        app: nice
+    spec:
+      runtimeClassName: wasmtime
+      containers:
+      - name: nice
+        image: "meteatamel/hello-wasm:0.1"
+      restartPolicy: OnFailure
+```
+
 ```shell
+#### For wasmedge
 # once up and running
 kubectl port-forward svc/nice 8080:8080
 
 # then you can curl the service
 curl localhost:8080
+```
+
+```shell
+#### For wasmtime
+# just check the logs
 ```
 
 **Overrides available**
