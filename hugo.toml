@@ -172,7 +172,7 @@ enable = false
 # End user relevant links. These will show up on left side of footer and in the community page if you have one.
 [[params.links.user]]
   name = "Ksctl Google Group"
-  url = "https://groups.google.com/g/ksctl-kubesimplify"
+  url = "https://groups.google.com/g/ksctl"
   icon = "fa fa-users-viewfinder"
   desc = "Google Group for Contributors to join"
 
