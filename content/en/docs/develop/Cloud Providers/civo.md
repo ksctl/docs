@@ -71,20 +71,4 @@ clusters which are managed by the cloud provider
 - SSH access to each workplane _Private Access_ via local network, secured by private key
 {{% /alert %}}
 
-{{% alert color="success" title="Managed Cluster" %}}
-
-<video width="360" height="202" controls>
-<source src="/videos/ksctl-civo-managed.mp4" type="video/mp4" />
-Your browser does not support the video tag.
-</video>
-{{% /alert %}}
-
-
-{{% alert color="success" title="Highly Available Cluster" %}}
-
-<video width="360" height="202" controls>
-<source src="/videos/ksctl-civo-ha.mp4" type="video/mp4" />
-Your browser does not support the video tag.
-</video>
-{{% /alert %}}
 

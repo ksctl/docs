@@ -124,20 +124,4 @@ clusters which are managed by the cloud provider
 
 {{% /alert %}}
 
-{{% alert color="success" title="Managed Cluster" %}}
-
-<video width="360" height="202" controls>
-<source src="/videos/ksctl-azure-managed.mp4" type="video/mp4" />
-Your browser does not support the video tag.
-</video>
-{{% /alert %}}
-
-
-{{% alert color="success" title="Highly Available Cluster" %}}
-
-<video width="360" height="202" controls>
-<source src="/videos/ksctl-azure-ha.mp4" type="video/mp4" />
-Your browser does not support the video tag.
-</video>
-{{% /alert %}}
 
