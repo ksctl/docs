@@ -178,7 +178,7 @@ enable = false
 
 [[params.links.user]]
   name ="Twitter"
-  url = "https://twitter.com/ksctl_k8s"
+  url = "https://twitter.com/ksctl_org"
   icon = "fab fa-twitter"
   desc = "Follow us on Twitter to get the latest news!"
 
@@ -189,7 +189,7 @@ enable = false
   desc = "Development takes place here!"
 [[params.links.developer]]
   name = "Developer mailing list"
-  url = "ksctl-kubesimplify@googlegroups.com"
+  url = "ksctl@googlegroups.com"
   icon = "fa fa-envelope"
   desc = "Discuss development issues around the project"
 
