@@ -2,8 +2,6 @@
 
 # Ksctl Docs
 
-**Status: `Technical Preview`**
-
 Documentation for [Ksctl](https://github.com/ksctl/ksctl) and [Ksctl Cli](https://github.com/ksctl/cli)
 
 [![OpenSSF Best Practices](https://www.bestpractices.dev/projects/7469/badge)](https://www.bestpractices.dev/projects/7469)
