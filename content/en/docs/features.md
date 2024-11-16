@@ -40,6 +40,7 @@ Ksctl eliminates the complexity of cluster management, allowing developers to fo
 - Intuitive command structure
 - No new configurations to learn
 - Perfect for teams of all skill levels
+- We have WASM workload support as well
 
 **🔄 Flexible Operation**
 - Self-managed cluster support
@@ -52,5 +53,4 @@ Ksctl eliminates the complexity of cluster management, allowing developers to fo
 - **Infrastructure Agnostic**: Deploy anywhere, manage consistently
 - **Rapid Deployment**: Bypass complex setup steps and day 0 tasks
 - **Future-Ready**: Upcoming support for day 1 operations and Wasm
-- **Production-Grade**: Built for both development and production environments
 - **Community-Driven**: Active development and continuous improvements
