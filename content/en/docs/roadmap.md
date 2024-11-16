@@ -69,5 +69,6 @@ flowchart LR;
 - add initial production ready for monitoring (prometheus + grafana) tracing (jaeger) Opentelemtery support
 - add initial production ready for Networking (cilium)
 - add initial production ready for service mesh (istio)
-
+- add support for Kubernetes migration like moving from one cloud provider to another
+- add support Kubernetes Backup
 
