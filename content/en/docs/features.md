@@ -22,12 +22,8 @@ Ksctl eliminates the complexity of cluster management, allowing developers to fo
 - No complex configuration required
 - Automated setup and initialization
 - Instant development environment readiness
-
-**💰 Cost-Efficient Architecture**
-- No additional infrastructure requirements
 - Local file-based or MongoDB storage options
-- Single binary deployment
-- Minimal resource overhead
+- Single binary deployment thus light-weight and efficient
 
 **🛠️ Streamlined Management**
 - Unified interface for all operations
@@ -40,7 +36,7 @@ Ksctl eliminates the complexity of cluster management, allowing developers to fo
 - Intuitive command structure
 - No new configurations to learn
 - Perfect for teams of all skill levels
-- We have WASM workload support as well
+- We have WASM workload support as well [Refer](docs/stable/ksctl-operators/application/)
 
 **🔄 Flexible Operation**
 - Self-managed cluster support
