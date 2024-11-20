@@ -60,9 +60,6 @@ Ksctl is a lightweight, easy-to-use tool that simplifies the process of managing
 
 [Create Issue](https://github.com/ksctl/ksctl/issues/new/choose)
 
-## Comparisons
-
-Here's an improved and more detailed version based on your recommendations:
 
 ## Comparisons
 
