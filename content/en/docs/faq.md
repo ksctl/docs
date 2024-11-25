@@ -29,28 +29,21 @@ Ksctl is a lightweight, easy-to-use tool that simplifies the process of managing
 
 [Getting Started](docs/stable/getting-started/)
 
-### How can I contribute to ksctl?
+<!-- ### How can I contribute to ksctl? -->
 
 
 ### Where can I find more information about ksctl?
 
-[Documentation](https://docs.ksctl.io)
+[Documentation](https://docs.ksctl.com)
 
-### How do I update ksctl to the latest version?
-
-### How do I scale a cluster up or down with ksctl?
-
-### How do I switch between cloud providers with ksctl?
-
-### How do I choose between managed and self-managed clusters with ksctl?
-
-### How do I choose between K3s and Kubeadm as the bootstrap provider with ksctl?
-
-### How do I configure storage options with ksctl?
-
-### How do I manage multiple clusters with ksctl?
-
-### How do I provide feedback on ksctl?
+<!-- ### How do I update ksctl to the latest version? -->
+<!-- ### How do I scale a cluster up or down with ksctl? -->
+<!-- ### How do I switch between cloud providers with ksctl? -->
+<!-- ### How do I choose between managed and self-managed clusters with ksctl? -->
+<!-- ### How do I choose between K3s and Kubeadm as the bootstrap provider with ksctl? -->
+<!-- ### How do I configure storage options with ksctl? -->
+<!-- ### How do I manage multiple clusters with ksctl? -->
+<!-- ### How do I provide feedback on ksctl? -->
 
 ### How do I report a bug with ksctl?
 
