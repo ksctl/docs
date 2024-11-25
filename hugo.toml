@@ -75,7 +75,7 @@ description = "A Ksctl Docs page"
       unsafe = true
   [markup.highlight]
     # See a complete list of available styles at https://xyproto.github.io/splash/docs/all.html
-    # style = "gruvbox-light"
+    style = "gruvbox"
     # Uncomment if you want your chosen highlight style used for code blocks without a specified language
     # guessSyntax = "true"
 
