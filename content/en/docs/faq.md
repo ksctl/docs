@@ -12,9 +12,6 @@ Ksctl is a lightweight, easy-to-use tool that simplifies the process of managing
 ### What can I do with ksctl?
 With ksctl, you can deploy Kubernetes clusters across any cloud provider, switch between providers seamlessly, and choose between managed and self-managed HA clusters. You can deploy clusters with a single command, without any complex configuration, and manage them with a unified interface that eliminates the need for provider-specific CLIs.
 
-### What are the key features of ksctl?
-
-[Features](features.md)
 
 ### How does ksctl simplify cluster management?
 Ksctl simplifies cluster management by providing a streamlined interface for common cluster operations like create, delete, scaleup and down. It eliminates the need for complex configuration and provider-specific CLIs, and provides a consistent experience across environments. With ksctl, developers can focus on building great applications without getting bogged down by the complexities of cluster management.
@@ -24,34 +21,6 @@ Ksctl is designed for developers, DevOps engineers, and anyone who needs to mana
 
 ### How does ksctl differ from other cluster management tools?
 Ksctl is a lightweight, easy-to-use tool that simplifies the process of managing Kubernetes clusters. It provides a unified interface for common cluster operations like create, delete, scaleup and down, and is designed to be simple, efficient, and developer-friendly. Ksctl is not a full-fledged platform like Rancher, but rather a simple CLI tool that provides a streamlined interface for common cluster operations.
-
-### How can I get started with ksctl?
-
-[Getting Started](docs/stable/getting-started/)
-
-<!-- ### How can I contribute to ksctl? -->
-
-
-### Where can I find more information about ksctl?
-
-[Documentation](https://docs.ksctl.com)
-
-<!-- ### How do I update ksctl to the latest version? -->
-<!-- ### How do I scale a cluster up or down with ksctl? -->
-<!-- ### How do I switch between cloud providers with ksctl? -->
-<!-- ### How do I choose between managed and self-managed clusters with ksctl? -->
-<!-- ### How do I choose between K3s and Kubeadm as the bootstrap provider with ksctl? -->
-<!-- ### How do I configure storage options with ksctl? -->
-<!-- ### How do I manage multiple clusters with ksctl? -->
-<!-- ### How do I provide feedback on ksctl? -->
-
-### How do I report a bug with ksctl?
-
-[Create Issue](https://github.com/ksctl/ksctl/issues/new/choose)
-
-### How do I request a new feature for ksctl?
-
-[Create Issue](https://github.com/ksctl/ksctl/issues/new/choose)
 
 
 ## Comparisons
