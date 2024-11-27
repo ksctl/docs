@@ -57,6 +57,10 @@ flowchart LR;
 
 ### Next Features
 
+[Project Board](https://github.com/orgs/ksctl/projects/3)
+
+All the below features will be moved to the Project Board and will be tracked there.
+
 - Talos as the next Bootstrap provider
 - Green software which can help you save energy and also better somehow
 - WASM first class support feature
@@ -71,4 +75,5 @@ flowchart LR;
 - add initial production ready for service mesh (istio)
 - add support for Kubernetes migration like moving from one cloud provider to another
 - add support Kubernetes Backup
+- open telemetry support will lead to better observability by combining logs, metrics, and traces in one place and some amazing tools we can use to make the detection amazing with Alerting, suggestions, ... from errors to suggestions based on some patterns
 
