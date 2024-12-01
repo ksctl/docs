@@ -5,7 +5,7 @@ weight: 9
 ---
 
 {{% pageinfo %}}
-for the Ksctl cli
+The Below CLI Command Reference are mapped from `ksctl/cli` repo
 {{% /pageinfo %}}
 
 
