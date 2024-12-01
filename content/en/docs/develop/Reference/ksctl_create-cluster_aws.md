@@ -9,14 +9,7 @@ Use to create a EKS cluster in Aws
 
 ### Synopsis
 
-
-░  ░░░░  ░░░      ░░░░      ░░░        ░░  ░░░░░░░
-▒  ▒▒▒  ▒▒▒  ▒▒▒▒▒▒▒▒  ▒▒▒▒  ▒▒▒▒▒  ▒▒▒▒▒  ▒▒▒▒▒▒▒
-▓     ▓▓▓▓▓▓      ▓▓▓  ▓▓▓▓▓▓▓▓▓▓▓  ▓▓▓▓▓  ▓▓▓▓▓▓▓
-▓  ▓▓▓  ▓▓▓▓▓▓▓▓▓  ▓▓  ▓▓▓▓  ▓▓▓▓▓  ▓▓▓▓▓  ▓▓▓▓▓▓▓
-█  ████  ███      ████      ██████  █████        █
-
-It is used to create cluster with the given name from user
+Ksctl ascii [logo]
 
 ```
 ksctl create-cluster aws [flags]

@@ -9,14 +9,7 @@ Use to create a Civo managed k3s cluster
 
 ### Synopsis
 
-
-░  ░░░░  ░░░      ░░░░      ░░░        ░░  ░░░░░░░
-▒  ▒▒▒  ▒▒▒  ▒▒▒▒▒▒▒▒  ▒▒▒▒  ▒▒▒▒▒  ▒▒▒▒▒  ▒▒▒▒▒▒▒
-▓     ▓▓▓▓▓▓      ▓▓▓  ▓▓▓▓▓▓▓▓▓▓▓  ▓▓▓▓▓  ▓▓▓▓▓▓▓
-▓  ▓▓▓  ▓▓▓▓▓▓▓▓▓  ▓▓  ▓▓▓▓  ▓▓▓▓▓  ▓▓▓▓▓  ▓▓▓▓▓▓▓
-█  ████  ███      ████      ██████  █████        █
-
-It is used to create cluster with the given name from user
+Ksctl ascii [logo]
 
 ```
 ksctl create-cluster civo [flags]

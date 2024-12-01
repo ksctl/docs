@@ -9,14 +9,7 @@ Use to deletes a AKS cluster
 
 ### Synopsis
 
-
-░  ░░░░  ░░░      ░░░░      ░░░        ░░  ░░░░░░░
-▒  ▒▒▒  ▒▒▒  ▒▒▒▒▒▒▒▒  ▒▒▒▒  ▒▒▒▒▒  ▒▒▒▒▒  ▒▒▒▒▒▒▒
-▓     ▓▓▓▓▓▓      ▓▓▓  ▓▓▓▓▓▓▓▓▓▓▓  ▓▓▓▓▓  ▓▓▓▓▓▓▓
-▓  ▓▓▓  ▓▓▓▓▓▓▓▓▓  ▓▓  ▓▓▓▓  ▓▓▓▓▓  ▓▓▓▓▓  ▓▓▓▓▓▓▓
-█  ████  ███      ████      ██████  █████        █
-
-It is used to delete cluster of given provider
+Ksctl ascii [logo]
 
 ```
 ksctl delete-cluster azure [flags]

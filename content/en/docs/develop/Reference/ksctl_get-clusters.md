@@ -9,16 +9,7 @@ Use to get clusters
 
 ### Synopsis
 
-
-░  ░░░░  ░░░      ░░░░      ░░░        ░░  ░░░░░░░
-▒  ▒▒▒  ▒▒▒  ▒▒▒▒▒▒▒▒  ▒▒▒▒  ▒▒▒▒▒  ▒▒▒▒▒  ▒▒▒▒▒▒▒
-▓     ▓▓▓▓▓▓      ▓▓▓  ▓▓▓▓▓▓▓▓▓▓▓  ▓▓▓▓▓  ▓▓▓▓▓▓▓
-▓  ▓▓▓  ▓▓▓▓▓▓▓▓▓  ▓▓  ▓▓▓▓  ▓▓▓▓▓  ▓▓▓▓▓  ▓▓▓▓▓▓▓
-█  ████  ███      ████      ██████  █████        █
-
-It is used to view clusters. For example:
-
-ksctl get-clusters 
+Ksctl ascii [logo]
 
 ```
 ksctl get-clusters [flags]

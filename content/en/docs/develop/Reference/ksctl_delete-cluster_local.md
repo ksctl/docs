@@ -9,14 +9,7 @@ Use to delete a kind cluster
 
 ### Synopsis
 
-
-░  ░░░░  ░░░      ░░░░      ░░░        ░░  ░░░░░░░
-▒  ▒▒▒  ▒▒▒  ▒▒▒▒▒▒▒▒  ▒▒▒▒  ▒▒▒▒▒  ▒▒▒▒▒  ▒▒▒▒▒▒▒
-▓     ▓▓▓▓▓▓      ▓▓▓  ▓▓▓▓▓▓▓▓▓▓▓  ▓▓▓▓▓  ▓▓▓▓▓▓▓
-▓  ▓▓▓  ▓▓▓▓▓▓▓▓▓  ▓▓  ▓▓▓▓  ▓▓▓▓▓  ▓▓▓▓▓  ▓▓▓▓▓▓▓
-█  ████  ███      ████      ██████  █████        █
-
-It is used to delete cluster of given provider
+Ksctl ascii [logo]
 
 ```
 ksctl delete-cluster local [flags]
