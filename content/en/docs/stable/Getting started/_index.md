@@ -64,4 +64,8 @@ make uninstall
   {{% /tab %}}
 {{< /tabpane >}}
 
+{{% alert color="info" title="How to start with cli" %}}
+
+[Here is the CLI references](https://docs.ksctl.com/docs/stable/reference/)
+{{% /alert %}}
 
