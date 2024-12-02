@@ -2,7 +2,7 @@
 title: Ksctl Docs
 ---
 
-{{< blocks/cover title="Welcome to Ksctl Documentation(dev)!" image_anchor="top" height="full" >}}
+{{< blocks/cover title="Welcome to Ksctl Documentation!" image_anchor="top" height="full" >}}
 
 ![Propsal design](/img/ksctl-logo.svg)
 
