@@ -1,0 +1,34 @@
+[build]
+  # Specify the directory containing the output of Hugo
+  publish = "public"
+  # Hugo build command
+  command = "hugo --gc --minify"
+
+[context.production]
+  # Specify the Hugo version
+  HUGO_VERSION = "0.139.2"
+
+  # Install additional dependencies before building
+  [context.production.environment]
+    NODE_VERSION = "lts/*"
+    GO_VERSION = "stable"
+
+  [context.production.command]
+    # Custom pre-build steps
+    [[context.production.command.pre]]
+      command = "npm install -D postcss postcss-cli autoprefixer hugo-extended"
+
+[[plugins]]
+  # Install Dart Sass plugin if needed
+  package = "@netlify/plugin-functions-core"
+
+[[plugins.inputs]]
+  command = "sudo snap install dart-sass"
+
+[build.processing]
+  # Ensure clean builds
+  skip_processing = false
+
+# [context.branch-deploy]
+#   # Customize branch deploy logic if necessary
+#   command = "hugo --gc --minify --buildDrafts"
