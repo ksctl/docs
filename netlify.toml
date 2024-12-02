@@ -9,10 +9,9 @@
 
 # Set environment variables
 [context.production.environment]
-  HUGO_ENVIRONMENT = "production"
+  HUGO_ENVIRONMENT = "development"
   GO_VERSION = "1.23"
-  HUGO_BASEURL = "https://docs.ksctl.com/"
-  HUGO_ENV = "production"
+  HUGO_BASEURL = "https://docs.dev.ksctl.com/"
   HUGO_ENABLEGITINFO = "true"
 
 [[headers]]
