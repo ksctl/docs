@@ -1,9 +1,9 @@
 ---
 title: Documentation
-description: develop branch documentation
+description: documentation page
 weight: 20
 ---
 
 {{% pageinfo %}}
-This is the `main` branch documentation
+Ksctl documentation
 {{% /pageinfo %}}
