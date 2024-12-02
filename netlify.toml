@@ -11,7 +11,7 @@
 [context.production.environment]
   HUGO_ENVIRONMENT = "production"
   GO_VERSION = "1.23"
-  HUGO_BASEURL = "https://docs.ksctl.com/"
+  HUGO_BASEURL = "https://docs.dev.ksctl.com/"
   HUGO_ENV = "production"
   HUGO_ENABLEGITINFO = "true"
 

@@ -1,11 +1,8 @@
 ---
 title: Documentation
-linkTitle: Docs
-menu: {main: {weight: 20}}
+description: develop branch documentation
 weight: 20
 ---
-
-**Status: _Technical Preview_**
 
 {{% pageinfo %}}
 This is the `main` branch documentation
