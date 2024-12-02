@@ -1,34 +1,37 @@
 [build]
-  # Specify the directory containing the output of Hugo
-  publish = "public"
-  # Hugo build command
-  command = "hugo --gc --minify"
-
-[context.production]
-  # Specify the Hugo version
+  # Set the Hugo version
   HUGO_VERSION = "0.139.2"
+  
+  # Build command
+  command = """
+    wget -O hugo.deb https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_extended_${HUGO_VERSION}_linux-amd64.deb && 
+    sudo dpkg -i hugo.deb && 
+    sudo snap install dart-sass && 
+    npm install -D postcss postcss-cli autoprefixer hugo-extended && 
+    hugo --gc --minify
+  """
+  
+  # Publish directory
+  publish = "public"
 
-  # Install additional dependencies before building
-  [context.production.environment]
-    NODE_VERSION = "lts/*"
-    GO_VERSION = "stable"
+# Set environment variables
+[context.production.environment]
+  HUGO_ENVIRONMENT = "production"
+  HUGO_ENV = "production"
 
-  [context.production.command]
-    # Custom pre-build steps
-    [[context.production.command.pre]]
-      command = "npm install -D postcss postcss-cli autoprefixer hugo-extended"
+# Node.js version configuration
+[build.environment]
+  NODE_VERSION = "lts/*"
 
-[[plugins]]
-  # Install Dart Sass plugin if needed
-  package = "@netlify/plugin-functions-core"
+# Optional: Add headers for security and performance
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    X-XSS-Protection = "1; mode=block"
 
-[[plugins.inputs]]
-  command = "sudo snap install dart-sass"
-
-[build.processing]
-  # Ensure clean builds
-  skip_processing = false
-
-# [context.branch-deploy]
-#   # Customize branch deploy logic if necessary
-#   command = "hugo --gc --minify --buildDrafts"
+# Optional: Redirects (if needed)
+# [[redirects]]
+#   from = "/*"
+#   to = "/index.html"
+#   status = 200
