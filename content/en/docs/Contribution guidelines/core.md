@@ -7,6 +7,26 @@ description: How to contribute to the ksctl
 Repository: ksctl/ksctl
 {{% /pageinfo %}}
 
+## Project structure
+
+### pkg/
+
+It contains the importable functionality of ksctl
+
+* *Controllers* (as this will be the only way to interact with the ksctlcore  
+* *Utility* functions with *consts* and *errors*  
+* *Logger*  
+* *Types*
+
+### internal/
+
+It contains the *cloudProvider*, *K8sDistro*, *StorageDriver* specific implementations
+
+### test/
+
+It contains the e2e and e2e test helper code and also the mock test files  
+
+
 
 ## Test out both All Mock and Unit tests and lints
 ```bash
