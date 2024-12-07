@@ -7,79 +7,70 @@ tags: [azure, ha, managed, core]
 ---
 
 {{% pageinfo %}}
-Azure support for HA and Managed Clusters
+Azure support for High Availability and Managed Kubernetes Clusters
 {{% /pageinfo %}}
 
-
 {{% alert color="warning" title="Caution" %}}
-we need credentials to access clusters
-
-these are confidential information so shouldn't be shared with anyone
+Azure credentials are required to access clusters. These credentials are sensitive information and must be kept secure.
 {{% /alert %}}
 
+## Azure Credential Requirements
 
-### Azure Subscription ID
-
-subscription id using your subscription
+### Subscription ID
+Your Azure subscription identifier can be found in your subscription details.
 
 ![azure-subscription](/img/azure/azure-subs-id.png)
 
-
-### Azure Tenant ID
-
-#### Azure Dashboard
-
-Azure Dashboard contains all the credentials required
-
+### Tenant ID
+Located in the Azure Dashboard, which provides access to all required credentials.
 
 ![azure-dashboard](/img/azure/azure-dashboard.png)
 
-lets get the tenant id from the Azure
+To locate your Tenant ID:
 
 ![](/img/azure/azure-tenantid.png)
 
+### Client ID (Application ID)
+Represents the identifier of your registered application.
 
-
-### Azure Client ID
-
-it represents the id of app created
-
+Steps to create:
+1. Navigate to App Registrations
 
 ![](/img/azure/azure-app-reg.png)
 
+2. Register a new application
 ![](/img/azure/azure-create-app-reg.png)
 
+3. Obtain the Client ID
 ![](/img/azure/azure-clientid.png)
 
+### Client Secret
+Authentication key for your registered application.
 
-
-### Azure Client Secret
-
-it represents the secret associated with the app in order to use it
-
+Steps to generate:
+1. Access secret creation
 ![create app secret](/img/azure/azure-client-secret1.png)
 
-
+2. Configure secret settings
 ![after-click](/img/azure/azure-client-secret.png)
 
-
+3. Save the generated secret
 ![copy-secret](/img/azure/azure-client-secret2.png)
 
-### Assign Role to your app
+### Role Assignment
+Configure application permissions:
 
-head over to subscriptions page and click **Access Control (IAM)**
-select the **Role Assignment** and then click **Add > Add Role Assignment**
-create a new role and when selecting the identity specify the name of the app
-Here you can customize the role this app has
+1. Navigate to Subscriptions > Access Control (IAM)
+2. Select "Role Assignment"
+3. Click "Add > Add Role Assignment"
+4. Create new role and specify the application name
+5. Configure desired permissions
 
 ![role-assign-app](/img/azure/azure-role-app.png)
 
+## Authentication Methods
 
-## How these credentials are used by ksctl
-
-
-1. Environment Variables
-
+### Environment Variables
 ```bash
 export AZURE_TENANT_ID=""
 export AZURE_SUBSCRIPTION_ID=""
@@ -87,41 +78,57 @@ export AZURE_CLIENT_ID=""
 export AZURE_CLIENT_SECRET=""
 ```
 
-2. Using command line
-
+### Command Line Interface
 ```bash
 ksctl cred
 ```
 
-## Current Features
+## Available Cluster Types
 
-### Cluster features
-#### Highly Available cluster
-clusters which are managed by the user not by cloud provider
+### High Availability (HA) Clusters
+Self-managed clusters with the following components:
+- Distributed etcd database instances
+- HAProxy load balancer for control plane high availability
+- Multiple control plane nodes
+- Worker nodes
 
-you can choose between k3s and kubeadm as your bootstrap tool
+Bootstrap options:
+- k3s (lightweight Kubernetes distribution)
+- kubeadm (official Kubernetes bootstrap tool)
 
-custom components being used
-- Etcd database VM
-- HAProxy loadbalancer VM for controlplane nodes
-- controlplane VMs
-- workerplane VMs
+### Azure Kubernetes Service (AKS)
+Fully managed Kubernetes service by Azure.
 
-#### Managed Cluster
-clusters which are managed by the cloud provider
+## Cluster Management Features
 
-### Other capabilities
+{{% alert title="Cluster Operations" %}}
 
-#### Create, Update, Delete, Switch
+### Managed Clusters (AKS)
+- Create and delete operations
+- Cluster switching
+- Infrastructure updates currently not supported
 
-{{% alert title="Update the cluster infrastructure" %}}
-
-**Managed cluster**: till now it's not supported
-
-**HA cluster**
-- addition and deletion of new workerplane node
-- SSH access to each cluster node (DB, LB, Controplane, WorkerPlane) _Public Access_, secured by private key
+### High Availability Clusters
+- Worker node scaling (add/remove)
+- Secure SSH access to all components:
+  - Database nodes
+  - Load balancer
+  - Control plane nodes
+  - Worker nodes
+- Protected by SSH key authentication
+- Public access enabled
 
 {{% /alert %}}
 
 
+## Looking for CLI Commands?
+
+All CLI commands mentioned in this documentation have detailed explanations in our command reference guide.
+
+{{% alert title="CLI Reference" %}}
+👉 Check out our comprehensive [CLI Commands Reference](/docs/develop/reference/) for:
+- Detailed command syntax
+- Usage examples
+- Available options and flags
+- Common use cases
+{{% /alert %}}
