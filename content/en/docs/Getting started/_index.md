@@ -67,5 +67,5 @@ make uninstall
 
 {{% alert color="info" title="How to start with cli" %}}
 
-[Here is the CLI references](https://docs.ksctl.com/docs/develop/reference/)
+[Here is the CLI references](/docs/develop/reference/)
 {{% /alert %}}

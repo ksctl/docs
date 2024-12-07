@@ -7,68 +7,97 @@ tags: [civo, ha, managed, core]
 ---
 
 {{% pageinfo %}}
-Civo support for HA and Managed Clusters
+Civo support for High Availability and Managed Kubernetes Clusters
 {{% /pageinfo %}}
 
 {{% alert color="warning" title="Caution" %}}
-we need credentials to access clusters
-
-these are confidential information so shouldn't be shared with anyone
+Civo API credentials are required to access clusters. These credentials are sensitive information and must be kept secure.
 {{% /alert %}}
 
+## Obtaining Civo Credentials
 
-## Getting credentials
+### 1. Access API Settings
+Navigate to your Civo dashboard settings:
 
-### under settings look for the profile
 ![](/img/civo/civo-settings.png)
+
+### 2. Open Profile Settings
+Select your profile section:
+
 ![](/img/civo/profile.png)
 
-### copy the credentials
+### 3. Generate API Key
+Access the API keys section and create or copy your API token:
+
 ![](/img/civo/security-api.png)
 
-## How to add credentials to ksctl
+## Authentication Methods
 
-1. Environment Variables
-
+### Environment Variables
+Set your Civo API token:
 ```bash
 export CIVO_TOKEN=""
 ```
 
-2. Using command line
-
+### Command Line Interface
+Use the ksctl credential manager:
 ```bash
 ksctl cred
 ```
 
-## Current Features
+## Available Cluster Types
 
-### Cluster features
-#### Highly Available cluster
-clusters which are managed by the user not by cloud provider
+### High Availability (HA) Clusters
+Self-managed clusters with the following components:
+- Distributed etcd database instances
+- HAProxy load balancer for control plane high availability
+- Multiple control plane nodes
+- Worker nodes
 
-you can choose between k3s and kubeadm as your bootstrap tool
+Bootstrap options:
+- k3s (lightweight Kubernetes distribution)
+- kubeadm (official Kubernetes bootstrap tool)
 
-custom components being used
-- Etcd database VM
-- HAProxy loadbalancer instance for controlplane nodes
-- controlplane instances
-- workerplane instances
+### Civo Kubernetes Service (CKS)
+Fully managed Kubernetes service by Civo.
 
-#### Managed Cluster
-clusters which are managed by the cloud provider
+## Cluster Management Features
 
-### Other capabilities
+{{% alert title="Cluster Operations" %}}
 
-#### Create, Update, Delete, Switch
+### Managed Clusters (CKS)
+- Cluster creation and deletion
+- Cluster switching capability
+- Infrastructure updates currently not supported
 
-{{% alert title="Update the cluster infrastructure" %}}
+### High Availability Clusters
+#### Node Management
+- Dynamic worker node scaling (add/remove nodes)
+- Secure SSH access to cluster components
 
-**Managed cluster**: till now it's not supported
+#### Access Control
+- **Control Plane Components**
+  - Database nodes (Public access)
+  - Load balancer (Public access)
+  - Control plane nodes (Public access)
+  - All secured with SSH key authentication
 
-**HA cluster**
-- addition and deletion of new workerplane node
-- SSH access to each cluster node (DB, LB, Controplane) _Public Access_, secured by private key
-- SSH access to each workplane _Private Access_ via local network, secured by private key
+- **Worker Nodes**
+  - Private network access only
+  - SSH access via internal network
+  - Protected by SSH key authentication
+
 {{% /alert %}}
 
 
+## Looking for CLI Commands?
+
+All CLI commands mentioned in this documentation have detailed explanations in our command reference guide.
+
+{{% alert title="CLI Reference" %}}
+👉 Check out our comprehensive [CLI Commands Reference](/docs/develop/reference/) for:
+- Detailed command syntax
+- Usage examples
+- Available options and flags
+- Common use cases
+{{% /alert %}}
