@@ -17,4 +17,14 @@ It creates cluster on the host machine utilizing kind
 
 currently using Kind `Kubernetes in Docker`
 
-{{< alert color="warning" title="About HA Cluster" >}}local system are constrained to fewer CPUs and memory so no HA cluster{{< /alert >}}
+## Looking for CLI Commands?
+
+All CLI commands mentioned in this documentation have detailed explanations in our command reference guide.
+
+{{% alert title="CLI Reference" %}}
+👉 Check out our comprehensive [CLI Commands Reference](/docs/develop/reference/) for:
+- Detailed command syntax
+- Usage examples
+- Available options and flags
+- Common use cases
+{{% /alert %}}

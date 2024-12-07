@@ -7,60 +7,55 @@ tags: [aws, ha, managed, core]
 ---
 
 {{% pageinfo %}}
-Aws support for HA and Managed Clusters
+AWS integration for High Availability and Managed Kubernetes Clusters
 {{% /pageinfo %}}
 
-
 {{% alert color="warning" title="Caution" %}}
-we need credentials to access clusters
-
-these are confidential information so shouldn't be shared with anyone
+AWS credentials are required to access clusters. These credentials are sensitive information and must be kept secure.
 {{% /alert %}}
 
+## Authentication Methods
 
-## How these credentials are used by ksctl
-
-1. Environment Variables
-
+### Environment Variables
+Set the following environment variables:
 ```bash
 export AWS_ACCESS_KEY_ID=""
 export AWS_SECRET_ACCESS_KEY=""
 ```
 
-2. Using command line
-
+### Command Line Interface
+Use the ksctl credential manager:
 ```bash
 ksctl cred
 ```
 
-## Current Features
+## Available Cluster Types
 
-### Cluster features
-#### Highly Available cluster
+### Highly Available (HA) Clusters
+Self-managed clusters with the following components:
+- Distributed etcd database instances
+- HAProxy load balancer for control plane high availability
+- Multiple control plane nodes
+- Worker nodes
 
-clusters which are managed by the user not by cloud provider
+Choose between two bootstrap options:
+- k3s (lightweight Kubernetes distribution)
+- kubeadm (official Kubernetes bootstrap tool)
 
-you can choose between k3s and kubeadm as your bootstrap tool
+### Amazon EKS (Managed Clusters)
+Elastic Kubernetes Service deployment with automated:
+- IAM role creation and management
+- Control plane setup
+- Node group configuration
 
-custom components being used
-- Etcd database VM
-- HAProxy loadbalancer VM for controlplane nodes
-- controlplane VMs
-- workerplane VMs
+#### IAM Configuration
+For each cluster, ksctl creates two roles:
+- `ksctl-<clustername>-wp-role`: Manages node pool permissions
+- `ksctl-<clustername>-cp-role`: Handles control plane access
 
-#### Managed Cluster Elastic Kubernetes Service
+#### Required IAM Policies
 
-we provision Roles `ksctl-*` 2 for each cluster:
-- `ksctl-<clustername>-wp-role` for the EKS NodePool
-- `ksctl-<clustername>-cp-role` for the EKS controlplane
-
-we utilize the iam:AssumeRole to assume the role and create the cluster
-
-
-##### Policies aka permissions for the user
-here is the policy and role which we are using
-
-1. **iam-role-full-access(Custom Policy)**
+1. **Custom IAM Role Access Policy**
 ```json
 {
     "Version": "2012-10-17",
@@ -98,7 +93,7 @@ here is the policy and role which we are using
 }
 ```
 
-2. **eks-full-access(Custom Policy)**
+2. **Custom EKS Access Policy**
 ```json
 {
     "Version": "2012-10-17",
@@ -117,18 +112,27 @@ here is the policy and role which we are using
 }
 ```
 
-3. **AmazonEC2FullAccess(Aws)**
-4. **IAMReadOnlyAccess(Aws)**
+3. **AWS Managed Policies Required**
+- AmazonEC2FullAccess
+- IAMReadOnlyAccess
 
-{{% alert color="info" title="Validaty of Kubeconfig" %}}
-The Kubeconfig generated after you ran
-
+{{% alert color="info" title="Kubeconfig Authentication" %}}
+After switching to an AWS cluster using:
 ```shell
 ksctl switch aws --name here-you-go --region us-east-1
 ```
+The generated kubeconfig uses AWS STS tokens which expire after 15 minutes. When you encounter authentication errors, simply run the switch command again to refresh the credentials.
+{{% /alert %}}
 
-we are using sst token to authenticate with the cluster, so the kubeconfig is valid for 15 minutes
 
-once you see that there is a error of unauthorized then you need to re-run the above command
+## Looking for CLI Commands?
 
+All CLI commands mentioned in this documentation have detailed explanations in our command reference guide.
+
+{{% alert title="CLI Reference" %}}
+👉 Check out our comprehensive [CLI Commands Reference](/docs/develop/reference/) for:
+- Detailed command syntax
+- Usage examples
+- Available options and flags
+- Common use cases
 {{% /alert %}}
