@@ -1,6 +1,9 @@
 ---
 title: Blog
-menu: {main: {weight: 30}}
+menu:
+  main:
+    weight: 30
+    pre: <i class='fa fa-blog'></i>
 ---
 
 This is the **blog** section. It has two categories: News and Releases.
