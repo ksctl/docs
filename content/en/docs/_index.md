@@ -1,7 +1,9 @@
 ---
 title: Documentation
-description: documentation page
-weight: 20
+menu:
+  main:
+    weight: 20
+    pre: <i class='fa fa-book'></i>
 ---
 
 {{% pageinfo %}}
