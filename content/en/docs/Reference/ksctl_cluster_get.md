@@ -1,32 +1,32 @@
 ---
-title: ksctl_cluster_connect
-description: Command documentation for ksctl_cluster_connect
+title: ksctl_cluster_get
+description: Command documentation for ksctl_cluster_get
 ---
 
-## ksctl cluster connect
+## ksctl cluster get
 
-Connect to existing cluster
+Use to get the cluster
 
 ### Synopsis
 
-It is used to connect to existing cluster
+It is used to get the cluster created by the user
 
 ```
-ksctl cluster connect [flags]
+ksctl cluster get [flags]
 ```
 
 ### Examples
 
 ```
 
-ksctl connect --help
-		
+ksctl get --help
+
 ```
 
 ### Options
 
 ```
-  -h, --help   help for connect
+  -h, --help   help for get
 ```
 
 ### Options inherited from parent commands
