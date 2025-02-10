@@ -1,32 +1,32 @@
 ---
-title: ksctl_version
-description: Command documentation for ksctl_version
+title: ksctl_self-update
+description: Command documentation for ksctl_self-update
 ---
 
-## ksctl version
+## ksctl self-update
 
-ksctl version
+Use to update the ksctl cli
 
 ### Synopsis
 
-To get version for ksctl components
+It is used to update the ksctl cli
 
 ```
-ksctl version [flags]
+ksctl self-update [flags]
 ```
 
 ### Examples
 
 ```
 
-ksctl version --help
-		
+ksctl self-update --help
+
 ```
 
 ### Options
 
 ```
-  -h, --help   help for version
+  -h, --help   help for self-update
 ```
 
 ### Options inherited from parent commands
