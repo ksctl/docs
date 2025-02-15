@@ -13,8 +13,6 @@ It helps in deploying stack using crd to help manage with installation, upgrades
 
 > ksctl/kcm is a pre-requisite for this to work
 
-```shell
-
 ```yaml
 apiVersion: manage.ksctl.com/v1
 kind: ClusterAddon
@@ -60,7 +58,7 @@ If you want to upgrade the applications in the stack you can edit the stack and 
 
 
 {{% alert title="Note on wasm category apps" color="info" %}}
-Only one of the app under the category `wasm` can be installed at a time we you might need to uninstall one to get another running
+Only one of the app under the category `Kwasm`, `SpinKube` can be installed at a time we you might need to uninstall one to get another running
 
 also the current implementation of the wasm catorgoty apps annotate all the nodes with kwasm as true
 {{% /alert %}}
