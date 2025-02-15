@@ -19,7 +19,7 @@ Core Design Components
 ### Managed Cluster creation & deletion
 ![light mode](/img/ksctl-managed-sequence.svg)
 
-### High Available Cluster creation & deletion
+### Self-Managed Cluster creation & deletion
 ![light mode](/img/ksctl-ha-sequence.svg)
 
 

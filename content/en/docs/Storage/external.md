@@ -9,8 +9,6 @@ tags: [storage, core]
 External MongoDB as a Storage provider
 {{% /pageinfo %}}
 
-Refer : `internal/storage/external/mongodb`
-
 ## Data to store and filtering it performs
 1. first it gets the cluster data / credentials data based on this filters
     - `cluster_name` (for cluster)
@@ -29,9 +27,9 @@ Refer : `internal/storage/external/mongodb`
 6. for calling **AlreadyCreated()** you just have to specify the func args
 7. Don't forget to call the **storage.Kill()** when you want to stop the complte execution. it guarantees that it will wait till all the pending operations on the storage are completed
 8. Custom Storage Directory you would need to specify the env var `KSCTL_CUSTOM_DIR_ENABLED` the value must be directory names wit space separated
-9. specify the **Required ENV vars**
-    - `export MONGODB_URI=""`
-    > Hint: mongodb://${username}:${password}@${domain}:${port} or mongo+atlas mongodb+srv://${username}:${password}@${domain}
+9. You need to pass the secrets in the context.
+
+> Hint: mongodb://${username}:${password}@${domain}:${port} or mongo+atlas mongodb+srv://${username}:${password}@${domain}
 
 ## Things to look for
 1. make sure when you recieve return data from **Read()**. copy the address value to the storage pointer variable and not the address!
@@ -39,10 +37,6 @@ Refer : `internal/storage/external/mongodb`
     - Database: `ksctl-{userid}-db`
     - Collection: `{cloud_provider}`
     - Document/Record: `raw bson data` with above specified data and filter fields
-3. When any clusterState is written, it gets stored in
-    - Database: `ksctl-{userid}-db`
-    - Collection: `credentials`
-    - Document/Record: `raw bson data` with above specified data and filter fields
 
-4. When you do Switch aka getKubeconfig it fetches the kubeconfig from the point 3 and stores it to `<some_dir>/.ksctl/kubeconfig`
+4. When you do Switch aka getKubeconfig it fetches the kubeconfig from the point 3 and returns the kubeconfig data
 
