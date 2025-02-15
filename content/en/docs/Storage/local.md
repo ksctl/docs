@@ -46,4 +46,4 @@ it is stored something like this
 1. make sure when you receive return data from **Read()**. copy the address value to the storage pointer variable and not the address!
 2. When any credentials are written, it will be stored in `<some_dir>/.ksctl/credentials/{cloud_provider}.json`
 3. When any clusterState is written, it gets stored in `<some_dir>/.ksctl/state/{cloud_provider}/{cluster_type}/{cluster_name} {region}/state.json`
-4. When you do Switch aka getKubeconfig it fetches the kubeconfig from the point 3 and stores it to `<some_dir>/.ksctl/kubeconfig`
+4. When you do Switch aka getKubeconfig it fetches the kubeconfig from the point 3 and returns the kubeconfig data

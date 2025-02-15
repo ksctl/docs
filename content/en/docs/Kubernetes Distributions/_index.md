@@ -6,5 +6,5 @@ categories: [Kubernetes Provider]
 ---
 
 {{% pageinfo %}}
-**K3s** and **Kubeadm** only work for HA self-managed clusters
+**K3s** and **Kubeadm** only work for self-managed clusters
 {{% /pageinfo %}}

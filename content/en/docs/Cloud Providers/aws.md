@@ -7,7 +7,7 @@ tags: [aws, ha, managed, core]
 ---
 
 {{% pageinfo %}}
-AWS integration for High Availability and Managed Kubernetes Clusters
+AWS integration for Self-Managed and Managed Kubernetes Clusters
 {{% /pageinfo %}}
 
 {{% alert color="warning" title="Caution" %}}
@@ -16,22 +16,15 @@ AWS credentials are required to access clusters. These credentials are sensitive
 
 ## Authentication Methods
 
-### Environment Variables
-Set the following environment variables:
-```bash
-export AWS_ACCESS_KEY_ID=""
-export AWS_SECRET_ACCESS_KEY=""
-```
-
 ### Command Line Interface
 Use the ksctl credential manager:
 ```bash
-ksctl cred
+ksctl configure cloud
 ```
 
 ## Available Cluster Types
 
-### Highly Available (HA) Clusters
+### Self-Managed Clusters
 Self-managed clusters with the following components:
 - Distributed etcd database instances
 - HAProxy load balancer for control plane high availability

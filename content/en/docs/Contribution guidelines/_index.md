@@ -83,6 +83,13 @@ $ git commit -S -m "YOUR_COMMIT_MESSAGE"
 
 You can find more comprehensive details on how to sign off git commits by referring to the [GitHub section on signing commits](https://docs.github.com/en/authentication/managing-commit-signature-verification/signing-commits).
 
+### Pre Commit Hooks
+
+```bash
+pip install pre-commit
+pre-commit install
+```
+
 ### Verification of Commit Signatures
 
 You have the option to sign commits and tags locally, which adds a layer of assurance regarding the origin of your changes. GitHub designates commits or tags as either "Verified" or "Partially verified" if they possess a GPG, SSH, or S/MIME signature that is cryptographically valid.

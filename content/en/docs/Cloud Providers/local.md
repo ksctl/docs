@@ -1,5 +1,5 @@
 ---
-title: Local
+title: Kind
 description: >
   Local Provider
 categories: [Cloud Provider]

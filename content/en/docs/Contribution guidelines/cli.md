@@ -17,7 +17,4 @@ make install_linux # for linux
 ```bash
 make install_macos # for macos
 ```
-### Windows
-```bash
-.\builder.ps1 # for windows
-```
+
