@@ -7,7 +7,7 @@ tags: [azure, ha, managed, core]
 ---
 
 {{% pageinfo %}}
-Azure support for High Availability and Managed Kubernetes Clusters
+Azure support for Self-Managed and Managed Kubernetes Clusters
 {{% /pageinfo %}}
 
 {{% alert color="warning" title="Caution" %}}
@@ -70,22 +70,14 @@ Configure application permissions:
 
 ## Authentication Methods
 
-### Environment Variables
-```bash
-export AZURE_TENANT_ID=""
-export AZURE_SUBSCRIPTION_ID=""
-export AZURE_CLIENT_ID=""
-export AZURE_CLIENT_SECRET=""
-```
-
 ### Command Line Interface
 ```bash
-ksctl cred
+ksctl configure cloud
 ```
 
 ## Available Cluster Types
 
-### High Availability (HA) Clusters
+### Self-Managed Clusters
 Self-managed clusters with the following components:
 - Distributed etcd database instances
 - HAProxy load balancer for control plane high availability
