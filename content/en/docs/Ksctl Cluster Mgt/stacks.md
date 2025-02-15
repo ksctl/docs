@@ -9,6 +9,24 @@ tags: [docs]
 It helps in deploying stack using crd to help manage with installation, upgrades, downgrades, uninstallaztion. from one version to another and provide a single place of truth where to look for which applications are installed
 {{% /pageinfo %}}
 
+## How to Install?
+
+> ksctl/kcm is a pre-requisite for this to work
+
+```shell
+
+```yaml
+apiVersion: manage.ksctl.com/v1
+kind: ClusterAddon
+metadata:
+  labels:
+    app.kubernetes.io/name: kcm
+  name: ksctl-stack
+spec:
+  addons:
+  - name: stack
+```
+
 ## Types
 
 ### Stack
@@ -32,13 +50,13 @@ If you want to upgrade the applications in the stack you can edit the stack and 
 
 
 ### Supported Apps and CNI
-| Name | Type | Category | Ksctl_Name | More Info |
-|- | - | - | - | - |
-| Argo-CD | standard | CI/CD | standard-argocd | [Link](#GitOps-Standard) |
-| Istio | standard | Service Mesh | standard-istio | [Link](#Monitoring-Lite) |
-| Kube-Prometheus | standard | Monitoring | standard-kubeprometheus | [Link](#Service-Mesh-Standard) |
-| SpinKube | production | Wasm | production-spinkube | [Link](#spinkube) |
-| WasmEdge and Wasmtime | production | Wasm | production-kwasm | [Link](#kwasm) |
+| Name | Type | More Info |
+|- | - | - |
+| GitOps | standard | [Link](#GitOps-Standard) |
+| Monitoring | lite | [Link](#Monitoring-Lite) |
+| Service Mesh | standard | [Link](#Service-Mesh-Standard) |
+| SpinKube | standard | [Link](#Wasm-Spinkube-standard) |
+| Kwasm | plus | [Link](#Wasm-Kwasm-plus) |
 
 
 {{% alert title="Note on wasm category apps" color="info" %}}
@@ -61,7 +79,6 @@ kind: Stack
 metadata:
   labels:
     app.kubernetes.io/name: ka
-    app.kubernetes.io/managed-by: kustomize
   name: gitops
 spec:
   stackName: "gitops-standard"
@@ -76,11 +93,10 @@ kind: Stack
 metadata:
   labels:
     app.kubernetes.io/name: ka
-    app.kubernetes.io/managed-by: kustomize
   name: gitops
 spec:
   stackName: "gitops-standard"
-  disableComponents: <list[str]> # list of components to disable
+  disableComponents: <list[str]> # list of components to disable accepeted values are argocd, argorollouts
   overrides:
     argocd:
       version: <string> # version of the argocd
@@ -103,7 +119,6 @@ kind: Stack
 metadata:
   labels:
     app.kubernetes.io/name: ka
-    app.kubernetes.io/managed-by: kustomize
   name: monitoring
 spec:
   stackName: "monitoring-lite"
@@ -118,11 +133,10 @@ kind: Stack
 metadata:
   labels:
     app.kubernetes.io/name: ka
-    app.kubernetes.io/managed-by: kustomize
   name: monitoring
 spec:
   stackName: "monitoring-lite"
-  disableComponents: <list[str]> # list of components to disable
+  disableComponents: <list[str]> # list of components to disable accepeted values are kube-prometheus
   overrides:
     kube-prometheus:
       version: <string> # version of the kube-prometheus
@@ -139,7 +153,6 @@ kind: Stack
 metadata:
   labels:
     app.kubernetes.io/name: ka
-    app.kubernetes.io/managed-by: kustomize
   name: mesh
 spec:
   stackName: "mesh-standard"
@@ -153,11 +166,10 @@ kind: Stack
 metadata:
   labels:
     app.kubernetes.io/name: ka
-    app.kubernetes.io/managed-by: kustomize
   name: mesh
 spec:
   stackName: "mesh-standard"
-  disableComponents: <list[str]> # list of components to disable
+  disableComponents: <list[str]> # list of components to disable accepeted values are istio
   overrides:
     istio:
       version: <string> # version of the istio
@@ -175,7 +187,6 @@ kind: Stack
 metadata:
   labels:
     app.kubernetes.io/name: ka
-    app.kubernetes.io/managed-by: kustomize
   name: spinkube
 spec:
   stackName: "wasm/spinkube-standard"
@@ -196,11 +207,10 @@ kind: Stack
 metadata:
   labels:
     app.kubernetes.io/name: ka
-    app.kubernetes.io/managed-by: kustomize
   name: spinkube
 spec:
   stackName: "wasm/spinkube-standard"
-  disableComponents: <list[str]> # list of components to disable
+  disableComponents: <list[str]> # list of components to disable accepeted values are spinkube-operator, spinkube-operator-shim-executor, spinkube-operator-crd, cert-manager, kwasm-operator, spinkube-operator-runtime-class
   overrides:
     spinkube-operator:
       version: <string> # version of the spinkube-operator-shim-executor are same for shim-execuator, runtime-class, shim-executor-crd, spinkube-operator
@@ -208,7 +218,8 @@ spec:
 
     spinkube-operator-shim-executor:
       version: <string> # version of the spinkube-operator-shim-executor are same for shim-execuator, runtime-class, shim-executor-crd, spinkube-operator
-      spinkube-operator-runtime-class:
+
+    spinkube-operator-runtime-class:
       version: <string> # version of the spinkube-operator-shim-executor are same for shim-execuator, runtime-class, shim-executor-crd, spinkube-operator
 
     spinkube-operator-crd:
@@ -224,7 +235,7 @@ spec:
 ```
 
 
-#### **Kwasm**
+#### **Wasm Kwasm-plus**
 
 **How to use it (Basic Usage)**
 
@@ -234,7 +245,6 @@ kind: Stack
 metadata:
   labels:
     app.kubernetes.io/name: ka
-    app.kubernetes.io/managed-by: kustomize
   name: kwasm
 spec:
   stackName: "wasm/kwasm-plus"
@@ -319,54 +329,13 @@ kind: Stack
 metadata:
   labels:
     app.kubernetes.io/name: ka
-    app.kubernetes.io/managed-by: kustomize
   name: kwasm
 spec:
   stackName: "wasm/kwasm-plus"
-  disableComponents: <list[str]> # list of components to disable
+  disableComponents: <list[str]> # list of components to disable accepeted values are kwasm-operator
   overrides:
     kwasm-operator:
       version: <string>
       kwasmOperatorChartOverridings: <map[string]any> # helm chart overridings, kwasm/kwasm-operator
 ```
 
-#### Example usage
-
-Lets deploy `argocd@v2.9.X`, `kube-prometheus-stack@v55.X.Y`
-```yaml
-apiVersion: application.ksctl.com/v1alpha1
-kind: Stack
-metadata:
-  name: monitoring-plus-gitops
-spec:
-  components:
-  - appName: standard-argocd
-    appType: app
-    version: v2.9.12
-
-  - appName: standard-kubeprometheus
-    appType: app
-    version: "55.0.0"
-```
-
-You can see once its deployed it fetch and deploys them
-
-Lets try to upgrade them to their latest versions
-```bash
-kubeclt edit stack monitoring-plus-gitops
-```
-
-```yaml
-apiVersion: application.ksctl.com/v1alpha1
-kind: Stack
-metadata:
-  name: monitoring-plus-gitops
-spec:
-  components:
-  - appName: standard-argocd
-    version: latest
-  - appName: standard-kubeprometheus
-    version: latest
-```
-
-once edited it will uninstall the previous install and reinstalls the latest deployments
