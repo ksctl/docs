@@ -6,7 +6,7 @@ categories: [Kubernetes Provider]
 ---
 
 {{% pageinfo %}}
-K3s for HA Cluster on supported provider
+K3s for self-managed Cluster on supported provider
 {{% /pageinfo %}}
 
 K3s is used for self-managed clusters. Its a lightweight k8s distribution.
