@@ -22,7 +22,7 @@ Repo | Description
 
 ## Usage
 
-Please refer to the [CLI Reference guide](https://docs.ksctl.com/docs/reference/cli/)
+Please refer to the [CLI Reference guide](https://docs.ksctl.com/docs/reference/)
 
 ## Contribution Guidelines
 Please refer to our [contribution guide](https://docs.ksctl.com/docs/contribution-guidelines/) if you wish to contribute to the project :smile:
