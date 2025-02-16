@@ -118,7 +118,7 @@ Fully managed Kubernetes service by Azure.
 All CLI commands mentioned in this documentation have detailed explanations in our command reference guide.
 
 {{% alert title="CLI Reference" %}}
-👉 Check out our comprehensive [CLI Commands Reference](/docs/develop/reference/) for:
+👉 Check out our comprehensive [CLI Commands Reference](/docs/reference/) for:
 - Detailed command syntax
 - Usage examples
 - Available options and flags

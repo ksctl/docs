@@ -76,5 +76,5 @@ ksctl configure storage # To configure storage
 
 {{% alert color="info" title="How to start with cli" %}}
 
-[Here is the CLI references](/docs/develop/reference/)
+[Here is the CLI references](/docs/reference/)
 {{% /alert %}}
