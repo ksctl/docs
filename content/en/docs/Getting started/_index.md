@@ -65,6 +65,15 @@ make uninstall
 {{< /tabpane >}}
 
 
+# Configure Ksctl CLI
+
+{{% alert title="Configure" %}}Steps to Configure Ksctl cli tool{{% /alert %}}
+
+```shell
+ksctl configure cloud # To configure cloud
+ksctl configure storage # To configure storage
+```
+
 {{% alert color="info" title="How to start with cli" %}}
 
 [Here is the CLI references](/docs/develop/reference/)
