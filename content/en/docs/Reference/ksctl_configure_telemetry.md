@@ -1,24 +1,24 @@
 ---
-title: ksctl_configure_cloud
-description: Command documentation for ksctl_configure_cloud
+title: ksctl_configure_telemetry
+description: Command documentation for ksctl_configure_telemetry
 ---
 
-## ksctl configure cloud
+## ksctl configure telemetry
 
-Configure cloud
+Configure telemetry
 
 ### Synopsis
 
-It will help you to configure the cloud
+It will help you to configure the telemetry
 
 ```
-ksctl configure cloud [flags]
+ksctl configure telemetry [flags]
 ```
 
 ### Options
 
 ```
-  -h, --help   help for cloud
+  -h, --help   help for telemetry
 ```
 
 ### Options inherited from parent commands
