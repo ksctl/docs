@@ -8,6 +8,10 @@ description: >
 This section will help you to learn about the underlying system of Ksctl. It will help you to obtain a deeper understanding of how Ksctl works.
 {{% /pageinfo %}}
 
+## 📐 Architecture
+Here is the entire Ksctl system level design
+![](/img/ksctl-arch.svg)
+
 ## Sequence diagrams for 2 major operations
 
 ### Create Cloud-Managed Clusters
