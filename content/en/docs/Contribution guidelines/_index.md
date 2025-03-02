@@ -156,3 +156,4 @@ If you need help contributing to the ksctl project, you can ask for help on the 
 We appreciate your contributions to the ksctl project!
 
 Some of our contributors [ksctl contributors](https://github.com/ksctl/ksctl/graphs/contributors)
+To learn about ksctl governance, see our [community governance document](https://github.com/ksctl/community/blob/main/GOVERNANCE.md).
