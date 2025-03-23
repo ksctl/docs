@@ -25,6 +25,15 @@ spec:
   - name: stack
 ```
 
+## Changelog
+
+### v0.2.0
+- added support for `gitops-standard` stack
+- added support for `monitoring-lite` stack
+- added support for `service-mesh-standard` stack
+- added support for `wasm-spinkube-standard` stack
+- added support for `wasm-kwasm-plus` stack
+
 ## Types
 
 ### Stack
@@ -50,11 +59,11 @@ If you want to upgrade the applications in the stack you can edit the stack and 
 ### Supported Apps and CNI
 | Name | Type | More Info |
 |- | - | - |
-| GitOps | standard | [Link](#GitOps-Standard) |
-| Monitoring | lite | [Link](#Monitoring-Lite) |
-| Service Mesh | standard | [Link](#Service-Mesh-Standard) |
-| SpinKube | standard | [Link](#Wasm-Spinkube-standard) |
-| Kwasm | plus | [Link](#Wasm-Kwasm-plus) |
+| GitOps | standard | [Link](#gitops-standard) |
+| Monitoring | lite | [Link](#monitoring-lite) |
+| Service Mesh | standard | [Link](#service-mesh-standard) |
+| SpinKube | standard | [Link](#wasm-spinkube-standard) |
+| Kwasm | plus | [Link](#wasm-kwasm-plus) |
 
 
 {{% alert title="Note on wasm category apps" color="info" %}}

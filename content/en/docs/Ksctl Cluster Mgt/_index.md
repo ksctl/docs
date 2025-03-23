@@ -9,8 +9,10 @@ Ksctl Cluster Management used for ksctl based cluster management.
 {{% /pageinfo %}}
 
 
-## Supported Addons
-- ksctl stack (ksctl/ka)
+## Changelog
+
+### v0.2.0
+- added support for `stack` aka ksctl/ka repo
 
 {{% alert color="warning" title="Caution" %}}
 Ensure that all resources installed via the addon are completely removed before proceeding with the uninstallation.  
