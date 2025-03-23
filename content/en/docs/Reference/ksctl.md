@@ -22,7 +22,6 @@ CLI tool which can manage multiple K8s clusters from local clusters to cloud pro
 
 ### SEE ALSO
 
-* [ksctl addons](ksctl_addons.md)	 - Use to work with addons
 * [ksctl cluster](ksctl_cluster.md)	 - Use to work with clusters
 * [ksctl configure](ksctl_configure.md)	 - Configure ksctl cli
 * [ksctl self-update](ksctl_self-update.md)	 - Use to update the ksctl cli

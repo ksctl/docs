@@ -35,6 +35,7 @@ ksctl cluster --help
 ### SEE ALSO
 
 * [ksctl](ksctl.md)	 - CLI tool for managing multiple K8s clusters
+* [ksctl cluster addons](ksctl_cluster_addons.md)	 - Use to work with addons
 * [ksctl cluster connect](ksctl_cluster_connect.md)	 - Connect to existing cluster
 * [ksctl cluster create](ksctl_cluster_create.md)	 - Use to create a cluster
 * [ksctl cluster delete](ksctl_cluster_delete.md)	 - Use to delete a cluster
