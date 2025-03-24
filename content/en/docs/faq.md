@@ -22,6 +22,8 @@ Ksctl is designed for developers, DevOps engineers, and anyone who needs to mana
 ### How does ksctl differ from other cluster management tools?
 Ksctl is a lightweight, easy-to-use tool that simplifies the process of managing Kubernetes clusters. It provides a unified interface for common cluster operations like create, delete, scaleup and down, and is designed to be simple, efficient, and developer-friendly. Ksctl is not a full-fledged platform like Rancher, but rather a simple CLI tool that provides a streamlined interface for common cluster operations.
 
+### Is it production-ready?
+No, the level of highly customization is missing in terms of cloud resources, ssh ports are open to public internet (self managed cluster) though authentication via ssh keypair are there. It recommended to be used by developers for development and testing purposes and get familiar with the Kubernetes Ecosystem
 
 ## Comparisons
 
