@@ -31,12 +31,21 @@ Ksctl eliminates the complexity of cluster management, allowing developers to fo
 - Consistent experience across environments
 - Simplified scaling and upgrades
 
+**🌱 Smart Cost & Emission Optimization**
+- Dynamic Region Switching for optimal cost efficiency
+- Smart Region Selection based on emission metrics
+- Intelligent Instance Type Selection balancing cost and sustainability
+- Automatic ranking of regions based on carbon intensity metrics
+- Eco-friendly operations with focus on renewable energy usage
+- No sacrifice of performance or reliability
+[For Details](/docs/concepts/smart-optimization/)
+
 **🎯 Developer-Focused Design**
 - Near-zero learning curve
 - Intuitive command structure
 - No new configurations to learn
 - Perfect for teams of all skill levels
-- We have WASM workload support as well [Refer](docs/stable/ksctl-operators/application/)
+- We have WASM workload support as well [Refer](/docs/ksctl-operators/application/)
 
 **🔄 Flexible Operation**
 - Self-managed cluster support
@@ -50,3 +59,4 @@ Ksctl eliminates the complexity of cluster management, allowing developers to fo
 - **Rapid Deployment**: Bypass complex setup steps and day 0 tasks
 - **Future-Ready**: Upcoming support for day 1 operations and Wasm
 - **Community-Driven**: Active development and continuous improvements
+- **Sustainability-Focused**: Optimized for both cost efficiency and environmental impact
