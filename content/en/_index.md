@@ -80,7 +80,7 @@ For announcement of latest features etc.
 {{% /blocks/feature %}}
 
 {{% blocks/feature icon="fab fa-discord" title="Join our Discord channel!"
-    url="https://discord.gg/pWjtKxVrMe" %}}
+    url="https://discord.ksctl.com" %}}
 Community calls, discussions, etc.
 {{% /blocks/feature %}}
 
