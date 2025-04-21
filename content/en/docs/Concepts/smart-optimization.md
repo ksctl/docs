@@ -9,9 +9,9 @@ tags: [docs, concepts, optimization]
 
 Ksctl provides intelligent optimization features that help you minimize infrastructure costs and environmental impact when deploying Kubernetes clusters. These features ensure that your clusters run in both the most cost-effective and environmentally friendly configurations.
 
-## Dynamic Region Switching (v2.4+)
+## Ksctl Optimizer (KO) (v2.4+)
 
-Introduced in **Ksctl v2.4**, Dynamic Region Switching optimizes costs and emissions by intelligently selecting the most efficient region for your Kubernetes clusters without changing your instance type.
+Introduced in **Ksctl v2.4**, KO optimizes costs and emissions by intelligently selecting the most efficient region for your Kubernetes clusters without changing your instance type.
 
 ### Key Benefits
 
@@ -22,17 +22,17 @@ Introduced in **Ksctl v2.4**, Dynamic Region Switching optimizes costs and emiss
 
 ### How It Works
 
-The Dynamic Region Switching feature evaluates regions based on multiple metrics to determine the optimal location for your Kubernetes clusters:
+It evaluates regions based on multiple metrics to determine the optimal location for your Kubernetes clusters:
 
 1. **Direct Carbon Intensity** (Lower is better): Measures the carbon emissions from energy production.
 2. **LCA Carbon Intensity** (Lower is better): Evaluates the lifecycle carbon emissions of energy sources.
 3. **Renewable Power Percentage** (Higher is better): Highlights regions with higher renewable energy usage.
 4. **Low CO₂ Power Percentage** (Higher is better): Focuses on regions with a lower share of carbon-intensive power.
 
-![Ksctl v2.4 Dynamic Region Switching Feature](/img/blogs/ksctl-new-recommendation.png)
+![Ksctl v2.4 KO Feature](/img/blogs/ksctl-new-recommendation.png)
 *Visualization of dynamic region switching optimization*
 
-## Smart Region and Instance Type Selection (v2.5+)
+## Ksctl Sustainability Metrics (KSM) (v2.5+)
 
 Introduced in **Ksctl v2.5**, this feature enhances the optimization capabilities through a card-based selection interface that helps you choose the best region and instance type for your Kubernetes clusters based on your specific requirements.
 
