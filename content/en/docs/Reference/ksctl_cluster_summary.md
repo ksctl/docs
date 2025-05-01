@@ -1,32 +1,32 @@
 ---
-title: ksctl_cluster_connect
-description: Command documentation for ksctl_cluster_connect
+title: ksctl_cluster_summary
+description: Command documentation for ksctl_cluster_summary
 ---
 
-## ksctl cluster connect
+## ksctl cluster summary
 
-Connect to existing cluster
+Use to get summary of the created cluster
 
 ### Synopsis
 
-It is used to connect to existing cluster
+It is used to get summary cluster
 
 ```
-ksctl cluster connect [flags]
+ksctl cluster summary [flags]
 ```
 
 ### Examples
 
 ```
 
-ksctl connect --help
+ksctl cluster summary --help
 		
 ```
 
 ### Options
 
 ```
-  -h, --help   help for connect
+  -h, --help   help for summary
 ```
 
 ### Options inherited from parent commands
